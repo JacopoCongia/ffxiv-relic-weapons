@@ -10,16 +10,33 @@ import CheckUncheck from '../components/CheckUncheck';
 function Endwalker() {
   const [weapons, setWeapons] = useState(data);
 //   const [weapons, setWeapons] = typeof window !== 'undefined' ? useState(JSON.parse(localStorage.getItem('weapons'))) : useState(data);
-  const [materials, setMaterials] = useState({thavnairianScalepowder: 68})
-  const [visibility, setVisibility] = useState({weapons: true});
+  const [materials, setMaterials] = useState(
+    {
+      thavnairianScalepowder: 68,
+      memoriesOfTheDying: 0 
+    })
+  const [visibility, setVisibility] = useState({resistance: true, augmentedResistance: true});
 //   const [visibility, setVisibility] = typeof window !== 'undefined' ? useState(JSON.parse(localStorage.getItem('sectionVisibility'))) : useState({weapons: true, amazingWeapons: true});
   
-  const weaponsTruths = weapons.resistance.filter((obj) => obj.wpnName === 'Tenacity' ? null : !obj.isSelected);
+  const resistanceTruths = weapons.resistance.filter((obj) => obj.wpnName === 'Tenacity' ? null : !obj.isSelected);
+  const augmentedResistanceTruths = weapons.augmentedResistance.filter((obj) => obj.wpnName === 'Augmented Tenacity' ? null : !obj.isSelected);
   const totalWeapons = 17;
 
   function selectWeapon(name) {
     setWeapons(oldWeapons => ({
+      ...oldWeapons,
       resistance: oldWeapons.resistance.map(weapon => {
+        return weapon.wpnName === name ?
+          {
+            ...weapon, 
+            isSelected: !weapon.isSelected
+          } :
+          weapon
+        })
+    }))
+    setWeapons(oldWeapons => ({
+      ...oldWeapons,
+      augmentedResistance: oldWeapons.augmentedResistance.map(weapon => {
         return weapon.wpnName === name ?
           {
             ...weapon, 
@@ -34,6 +51,7 @@ function Endwalker() {
     if (type === 'resistance') {
       setWeapons(oldWeapons => (
         {
+          ...oldWeapons,
           resistance: oldWeapons.resistance.map(weapon => (
             {
             ...weapon, 
@@ -42,15 +60,11 @@ function Endwalker() {
           ))
         }
       ))
-    } else if (type === 'amazingWeapons') {
+    } else if (type === 'augmentedResistance') {
       setWeapons(oldWeapons => (
         {
-          manderville: oldWeapons.manderville.map(weapon => (
-            {
-            ...weapon
-            }
-          )),
-          amazingManderville: oldWeapons.amazingManderville.map(weapon => (
+          ...oldWeapons,
+          augmentedResistance: oldWeapons.augmentedResistance.map(weapon => (
             {
               ...weapon,
               isSelected: true
@@ -69,18 +83,22 @@ function Endwalker() {
             ...weapon, 
             isSelected: false
             }
-          ))
+          )),
+          augmentedResistance: oldWeapons.augmentedResistance.map(weapon => (
+            {
+              ...weapon,
+            }))
         }
       ))
-    } else if (type === 'amazingWeapons') {
+    } else if (type === 'augmentedResistance') {
       setWeapons(oldWeapons => (
         {
-          manderville: oldWeapons.manderville.map(weapon => (
+          resistance: oldWeapons.resistance.map(weapon => (
             {
             ...weapon
             }
           )),
-          amazingManderville: oldWeapons.amazingManderville.map(weapon => (
+          augmentedResistance: oldWeapons.augmentedResistance.map(weapon => (
             {
               ...weapon,
               isSelected: false
@@ -97,7 +115,19 @@ function Endwalker() {
       }))
   };
   
-  const weaponElements = weapons.resistance.map(item => (
+  const resistanceElements = weapons.resistance.map(item => (
+    <Weapon 
+      key={item.id}
+      id={item.id}
+      jobName={item.wpnJob}
+      weaponName={item.wpnName}
+      icon={item.icon}
+      isSelected={item.isSelected}
+      selectWeapon={() => selectWeapon(item.wpnName)}
+    />
+  ));
+ 
+  const augmentedResistanceElements = weapons.augmentedResistance.map(item => (
     <Weapon 
       key={item.id}
       id={item.id}
@@ -115,36 +145,38 @@ function Endwalker() {
 
       setMaterials(
         {
-          thavnairianScalepowder: ((weaponsTruths.length) * 4),
+          thavnairianScalepowder: ((resistanceTruths.length) * 4),
+          memoriesOfTheDying: ((augmentedResistanceTruths.length) * 60)
         }
       )
     }, [weapons, visibility]);
 
   return (
+    <>
     <div>
       <Header 
         title='Resistance'
       />
         <WeaponsHeader 
-          weaponsTruths={weaponsTruths.length}
-          handleVisibility={() => handleVisibility('weapons', visibility.weapons)}
-          visibility={visibility.weapons}
+          weaponsTruths={resistanceTruths.length}
+          handleVisibility={() => handleVisibility('resistance', visibility.resistance)}
+          visibility={visibility.resistance}
           totalWeapons={totalWeapons}
           name={'Resistance Weapons'}
           patchInfo={'iLvl 485 (Patch 5.25)'}
         />
-        { visibility.weapons && 
+        { visibility.resistance && 
           <div className='main'>
           <WeaponsContainer 
             weapons={weapons.resistance} 
             selectWeapon={selectWeapon} 
             weaponType='weapon' 
-            weaponElements={weaponElements}
+            weaponElements={resistanceElements}
           />
           <Materials 
             materials={materials.thavnairianScalepowder} 
             materialName='Thavnairian Scalepowder'
-            icon='/icons/endwalker-icons/materials/Manderium_Meteorite_Icon.png'
+            icon='/icons/shadowbringers-icons/materials/Thavnairian_Scalepowder_Icon.png'
             tomestone='Allagan Tomestone of Poetics'
             tomestoneIcon='/icons/Allagan_Tomestone_of_Poetics_Icon.png'
             tomestoneQuantity={1000}
@@ -157,6 +189,40 @@ function Endwalker() {
           </div>
         }
       </div>
+      <div>
+        <WeaponsHeader 
+          weaponsTruths={augmentedResistanceTruths.length}
+          handleVisibility={() => handleVisibility('augmentedResistance', visibility.augmentedResistance)}
+          visibility={visibility.augmentedResistance}
+          totalWeapons={totalWeapons}
+          name={'Augmented Resistance Weapons'}
+          patchInfo={'iLvl 500 (Patch 5.35)'}
+        />
+        { visibility.augmentedResistance && 
+          <div className='main'>
+          <WeaponsContainer 
+            weapons={weapons.augmentedResistance} 
+            selectWeapon={selectWeapon} 
+            weaponType='weapon' 
+            weaponElements={augmentedResistanceElements}
+          />
+          <Materials 
+            materials={materials.memoriesOfTheDying} 
+            materialName='Memories of the Dying'
+            icon='/icons/shadowbringers-icons/materials/Harrowing_Memory_of_the_Dying_Icon.png'
+            tomestone={null}
+            tomestoneIcon={null}
+            tomestoneQuantity={null}
+            materialQuantity={60}
+          />
+          <CheckUncheck 
+            checkAll={() => checkAll('augmentedResistance')}
+            uncheckAll={() => uncheckAll('augmentedResistance')}
+          />
+          </div>
+        }
+      </div>
+    </>
   )
 }
 

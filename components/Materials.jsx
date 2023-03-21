@@ -3,14 +3,18 @@ import React from 'react';
 function Materials(props) {
     return (
         <div className='materials-container'>
-            <p className='tomestone'>
-            <img 
-                className='tomestone-icon'
-                alt={props.tomestone}
-                src={props.tomestoneIcon}
-            />
-            {props.tomestone}: {(props.materials / props.materialQuantity) * props.tomestoneQuantity}
-            </p>
+           {props.tomestone !== null && 
+            <div>
+                    <p className='tomestone'>
+                    <img 
+                        className='tomestone-icon'
+                        alt={props.tomestone}
+                        src={props.tomestoneIcon}
+                    />
+                    {props.tomestone}: {(props.materials / props.materialQuantity) * props.tomestoneQuantity}
+                </p>
+                </div>
+            }
             <p className='primary-materials'>
                 <img 
                     className='material-icon'

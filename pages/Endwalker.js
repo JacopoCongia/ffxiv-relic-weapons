@@ -153,70 +153,72 @@ function Endwalker() {
     }, [weapons, visibility]);
 
   return (
-    <div>
-      <Header 
-        title='Manderville'
-      />
-        <WeaponsHeader 
-          weaponsTruths={weaponsTruths.length}
-          handleVisibility={() => handleVisibility('weapons', visibility.weapons)}
-          visibility={visibility.weapons}
-          totalWeapons={totalWeapons}
-          name={'Manderville Weapons'}
-          patchInfo={'iLvl 615 (Patch 6.25)'}
-        />
-        { visibility.weapons && 
-          <div className='main'>
-          <WeaponsContainer 
-            weapons={weapons.manderville} 
-            selectWeapon={selectWeapon} 
-            weaponType='weapon' 
-            weaponElements={weaponElements}
-          />
-          <Materials 
-            materials={materials.meteorites} 
-            materialName='Manderium Meteorites'
-            icon='/icons/endwalker-icons/materials/Manderium_Meteorite_Icon.png'
-            tomestone='Allagan Tomestone of Astronomy'
-            tomestoneIcon='/icons/Allagan_Tomestone_of_Astronomy_Icon.png'
-            tomestoneQuantity={1500}
-            materialQuantity={3}
-          />
-          <CheckUncheck 
-            checkAll={() => checkAll('weapons')}
-            uncheckAll={() => uncheckAll('weapons')}
-          />
+      <div className='content'>
+        <Header title='Manderville' />
+          <div className='content--patches'>
+            <WeaponsHeader 
+              weaponsTruths={weaponsTruths.length}
+              handleVisibility={() => handleVisibility('weapons', visibility.weapons)}
+              visibility={visibility.weapons}
+              totalWeapons={totalWeapons}
+              name={'Manderville Weapons'}
+              patchInfo={'iLvl 615 (Patch 6.25)'}
+            />
+            { visibility.weapons && 
+              <div className='main'>
+              <WeaponsContainer 
+                weapons={weapons.manderville} 
+                selectWeapon={selectWeapon} 
+                weaponType='weapon' 
+                weaponElements={weaponElements}
+              />
+              <Materials 
+                materials={materials.meteorites} 
+                materialName='Manderium Meteorites'
+                icon='/icons/endwalker-icons/materials/Manderium_Meteorite_Icon.png'
+                tomestone='Allagan Tomestone of Astronomy'
+                tomestoneIcon='/icons/Allagan_Tomestone_of_Astronomy_Icon.png'
+                tomestoneQuantity={1500}
+                materialQuantity={3}
+              />
+              <CheckUncheck 
+                checkAll={() => checkAll('weapons')}
+                uncheckAll={() => uncheckAll('weapons')}
+              />
+              </div>
+            }
+            <WeaponsHeader 
+              weaponsTruths={amazingWeaponsTruths.length}
+              handleVisibility={() => handleVisibility('amazingWeapons', visibility.amazingWeapons)}
+              visibility={visibility.amazingWeapons}
+              totalWeapons={totalWeapons}
+              name={'Amazing Manderville Weapons'}
+              patchInfo={'iLvl 630 (Patch 6.35)'}
+            />
+            { visibility.amazingWeapons && 
+              <div className='main'>
+                <WeaponsContainer 
+                  weapons={weapons.amazingManderville} 
+                  selectWeapon={selectWeapon} 
+                  weaponType='amazingWeapon' 
+                  weaponElements={amazingWeaponElements}
+                />
+                <Materials 
+                  materials={materials.chondrites} 
+                  materialName='Complementary Chondrites'
+                  icon='/icons/endwalker-icons/materials/Complementary_Chondrite_Icon.png'
+                  tomestone='Allagan Tomestone of Astronomy'
+                  tomestoneIcon='/icons/Allagan_Tomestone_of_Astronomy_Icon.png'
+                  tomestoneQuantity={1500}
+                  materialQuantity={3}
+                />
+                <CheckUncheck 
+                  checkAll={() => checkAll('amazingWeapons')}
+                  uncheckAll={() => uncheckAll('amazingWeapons')}
+                />
+              </div>
+              }
           </div>
-        }
-        <WeaponsHeader 
-          weaponsTruths={amazingWeaponsTruths.length}
-          handleVisibility={() => handleVisibility('amazingWeapons', visibility.amazingWeapons)}
-          visibility={visibility.amazingWeapons}
-          totalWeapons={totalWeapons}
-          name={'Amazing Manderville Weapons'}
-          patchInfo={'iLvl 630 (Patch 6.35)'}
-        />
-        { visibility.amazingWeapons && 
-          <div className='main'>
-            <WeaponsContainer 
-              weapons={weapons.amazingManderville} 
-              selectWeapon={selectWeapon} 
-              weaponType='amazingWeapon' 
-              weaponElements={amazingWeaponElements}
-            />
-            <Materials 
-              materials={materials.chondrites} 
-              materialName='Complementary Chondrites'
-              icon='/icons/endwalker-icons/materials/Complementary_Chondrite_Icon.png'
-              tomestone='Allagan Tomestone of Astronomy'
-              tomestoneIcon='/icons/Allagan_Tomestone_of_Astronomy_Icon.png'
-            />
-            <CheckUncheck 
-              checkAll={() => checkAll('amazingWeapons')}
-              uncheckAll={() => uncheckAll('amazingWeapons')}
-            />
-          </div>
-          }
       </div>
   )
 }
