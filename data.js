@@ -1,14 +1,64 @@
 const data = {
+    tomestones: [
+        {
+            id: 0,
+            name: 'Allagan Tomestones of Astronomy',
+            icon: '/icons/Allagan_Tomestone_of_Astronomy_Icon.png'
+        },
+        {
+            id: 1,
+            name: 'Allagan Tomestones of Poetics',
+            icon: '/icons/Allagan_Tomestone_of_Poetics_Icon.png'
+        }
+    ],
     materials: [
         {
             id: 0,
             name: 'Manderium Meteorites',
-            icon: '/icons/endwalker-icons/materials/Manderium_Meteorite_Icon.png'
+            icon: '/icons/endwalker-icons/materials/Manderium_Meteorite_Icon.png',
+            reqTotal: 57,
+            reqPerWeapon: 3,
+            type: 'manderville'            
         },
         {
             id: 1,
             name: 'Complementary Chondrites',
-            icon: '/icons/endwalker-icons/materials/Complementary_Chondrite_Icon.png'
+            icon: '/icons/endwalker-icons/materials/Complementary_Chondrite_Icon.png',
+            reqTotal: 57,
+            reqPerWeapon: 3,
+            type: 'amazingManderville'
+        },
+        {
+            id: 2,
+            name: 'Thavnairian Scalepowder',
+            icon: '/icons/shadowbringers-icons/materials/Thavnairian_Scalepowder_Icon.png',
+            reqTotal: 68,
+            reqPerWeapon: 4,
+            type: 'resistance'
+        },
+        {
+            id: 3,
+            name: 'Harrowing Memory of the Dying',
+            icon: '/icons/shadowbringers-icons/materials/Harrowing_Memory_of_the_Dying_Icon.png',
+            reqTotal: 340,
+            reqPerWeapon: 20,
+            type: 'augmentedResistance'
+        },
+        {
+            id: 4,
+            name: 'Sorrowful Memory of the Dying',
+            icon: '/icons/shadowbringers-icons/materials/Sorrowful_Memory_of_the_Dying_Icon.png',
+            reqTotal: 340,
+            reqPerWeapon: 20,
+            type: 'augmentedResistance'
+        },
+        {
+            id: 5,
+            name: 'Tortured Memory of the Dying',
+            icon: '/icons/shadowbringers-icons/materials/Tortured_Memory_of_the_Dying_Icon.png',
+            reqTotal: 340,
+            reqPerWeapon: 20,
+            type: 'augmentedResistance'
         }
     ],
     manderville: [
