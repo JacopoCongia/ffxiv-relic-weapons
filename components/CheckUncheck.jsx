@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function CheckUncheck({ checkAll, uncheckAll, weapons, type }) {
   const allChecked = weapons.map((weapon) => ({
@@ -13,18 +14,18 @@ function CheckUncheck({ checkAll, uncheckAll, weapons, type }) {
 
   return (
     <div className="flex flex-col gap-6 py-5 sm:flex-row">
-      <button
-        className="h-[40px] w-[200px] rounded-[6px] bg-green-700 hover:opacity-80"
+      <Button
         onClick={() => checkAll(allChecked, type)}
+        check
       >
         Check All
-      </button>
-      <button
-        className="h-[40px] w-[200px] rounded-[6px] bg-red-900 hover:opacity-80"
+      </Button>
+      <Button
         onClick={() => uncheckAll(allUnchecked, type)}
+        uncheck
       >
         Uncheck All
-      </button>
+      </Button>
     </div>
   );
 }
