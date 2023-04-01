@@ -7,7 +7,7 @@ function Navbar({ title }) {
 
   return (
     <div className="sticky top-0 z-50 font-bold tracking-wider text-white">
-      <div className="hidden justify-evenly gap-5 bg-white/30 py-2 drop-shadow-xl backdrop-blur min-[825px]:flex">
+      <div className="hidden justify-evenly gap-5 bg-white/30 py-2 drop-shadow-xl backdrop-blur min-[360px]:flex">
         <Link href="/Endwalker">
           <h1 className="hover:opacity-80">Endwalker</h1>
         </Link>
@@ -18,7 +18,7 @@ function Navbar({ title }) {
         <h1 className="hover:opacity-80">Heavensward</h1>
         <h1 className="hover:opacity-80">A Realm Reborn</h1>
       </div>
-      <div className="flex items-center bg-white/30 px-4 py-2 drop-shadow-xl backdrop-blur min-[825px]:hidden">
+      <div className="flex items-center bg-white/30 px-4 py-2 drop-shadow-xl backdrop-blur min-[360px]:hidden">
         <h1 className="mr-auto">{title}</h1>
         <GoThreeBars
           onClick={() => setVisible(!visible)}
