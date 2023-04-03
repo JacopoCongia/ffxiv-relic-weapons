@@ -75,7 +75,7 @@ function Endwalker() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar title="Endwalker" />
       <Header title="Manderville" />
       <WeaponsHeader
         weaponsTruths={weaponsTruths.length}

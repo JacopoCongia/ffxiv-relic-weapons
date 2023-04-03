@@ -72,7 +72,7 @@ function Shadowbringers() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar title="Shadowbringers" />
       <Header title="Resistance" />
       <WeaponsHeader
         weaponsTruths={weaponsTruths.length}
