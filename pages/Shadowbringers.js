@@ -11,7 +11,8 @@ function Shadowbringers() {
   const [weapons, setWeapons] = useState(data);
   const [visibility, setVisibility] = useState({
     weapons: true,
-    augmentedWeapons: true
+    augmentedWeapons: true,
+    recollection: true
   });
 
   const weaponsTruths = weapons.resistance.filter((weapon) =>
@@ -19,6 +20,9 @@ function Shadowbringers() {
   );
   const augmentedWeaponsTruths = weapons.augmentedResistance.filter((weapon) =>
     weapon.wpnName === "Augmented Tenacity" ? null : !weapon.isSelected
+  );
+  const recollectionWeaponsTruths = weapons.recollection.filter((weapon) =>
+    weapon.wpnName === "Tenacity Recollection" ? null : !weapon.isSelected
   );
 
   function selectWeapon(name, key, wpnCategory) {
@@ -130,6 +134,37 @@ function Shadowbringers() {
           <CheckUncheck
             weapons={weapons.augmentedResistance}
             type="augmentedResistance"
+            checkAll={checkAll}
+            uncheckAll={uncheckAll}
+          />
+        </div>
+      )}
+      <WeaponsHeader
+        weaponsTruths={recollectionWeaponsTruths.length}
+        handleVisibility={() =>
+          handleVisibility("recollection", visibility.recollection)
+        }
+        visibility={visibility.recollection}
+        totalWeapons={17}
+        name="Recollection Weapons"
+        patchInfo="iLvl 500 (Patch 5.35)"
+      />
+      {visibility.recollection && (
+        <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
+          <WeaponsContainer
+            weapons={weapons.recollection}
+            type="recollection"
+            selectWeapon={selectWeapon}
+          />
+          <MaterialsContainer
+            materials={data.materials}
+            type="recollection"
+            tomestones={null}
+            weaponsTruths={recollectionWeaponsTruths}
+          />
+          <CheckUncheck
+            weapons={weapons.recollection}
+            type="recollection"
             checkAll={checkAll}
             uncheckAll={uncheckAll}
           />
