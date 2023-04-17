@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { GoThreeBars, GoHome } from "react-icons/go";
+import classNames from "classnames";
 
-function Navbar({ title }) {
+function Navbar({ title, className }) {
   const [visible, setVisible] = useState(false);
+
+  const classes = classNames(className);
 
   return (
     <div className="sticky top-0 z-50 select-none font-bold tracking-wider text-white">
