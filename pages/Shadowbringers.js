@@ -12,7 +12,8 @@ function Shadowbringers() {
   const [visibility, setVisibility] = useState({
     weapons: true,
     augmentedWeapons: true,
-    recollection: true
+    recollection: true,
+    lawsOrder: true
   });
 
   const weaponsTruths = weapons.resistance.filter((weapon) =>
@@ -23,6 +24,9 @@ function Shadowbringers() {
   );
   const recollectionWeaponsTruths = weapons.recollection.filter((weapon) =>
     weapon.wpnName === "Tenacity Recollection" ? null : !weapon.isSelected
+  );
+  const lawsOrderWeaponsTruths = weapons.lawsOrder.filter((weapon) =>
+    weapon.wpnName === "Law's Order Kite Shield" ? null : !weapon.isSelected
   );
 
   function selectWeapon(name, key, wpnCategory) {
@@ -167,6 +171,37 @@ function Shadowbringers() {
           <CheckUncheck
             weapons={weapons.recollection}
             type="recollection"
+            checkAll={checkAll}
+            uncheckAll={uncheckAll}
+          />
+        </div>
+      )}
+      <WeaponsHeader
+        weaponsTruths={lawsOrderWeaponsTruths.length}
+        handleVisibility={() =>
+          handleVisibility("lawsOrder", visibility.lawsOrder)
+        }
+        visibility={visibility.lawsOrder}
+        totalWeapons={17}
+        name="Law's Order Weapons"
+        patchInfo="iLvl 515 (Patch 5.45)"
+      />
+      {visibility.lawsOrder && (
+        <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
+          <WeaponsContainer
+            weapons={weapons.lawsOrder}
+            type="lawsOrder"
+            selectWeapon={selectWeapon}
+          />
+          <MaterialsContainer
+            materials={data.materials}
+            type="lawsOrder"
+            tomestones={null}
+            weaponsTruths={lawsOrderWeaponsTruths}
+          />
+          <CheckUncheck
+            weapons={weapons.lawsOrder}
+            type="lawsOrder"
             checkAll={checkAll}
             uncheckAll={uncheckAll}
           />

@@ -67,6 +67,14 @@ const data = {
       reqTotal: 102,
       reqPerWeapon: 6,
       type: "recollection"
+    },
+    {
+      id: 7,
+      name: "Loathsome Memory of the Dying",
+      icon: "/icons/shadowbringers-icons/materials/Loathsome_Memory_of_the_Dying_Icon.png",
+      reqTotal: 255,
+      reqPerWeapon: 15,
+      type: "lawsOrder"
     }
   ],
   manderville: [
@@ -828,6 +836,152 @@ const data = {
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
       icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Solstice_Icon.png",
+      isSelected: false
+    }
+  ],
+  lawsOrder: [
+    {
+      id: 0,
+      wpnName: "Law's Order Bastard Sword",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Bastard_Sword_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Law's Order Kite Shield",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Kite_Shield_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Law's Order Labrys",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Labrys_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Law's Order Zweihander",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Zweihander_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Law's Order Manatrigger",
+      wpnJob: "Gunbreaker",
+      wpnJobShort: "GNB",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Manatrigger_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Law's Order Spear",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Spear_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Law's Order Knuckles",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Knuckles_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Law's Order Samurai Blade",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Samurai_Blade_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Law's Order Knives",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Knives_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Law's Order Composite Bow",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Composite_Bow_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Law's Order Revolver",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Revolver_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Law's Order Chakrams",
+      wpnJob: "Dancer",
+      wpnJobShort: "DNC",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Chakrams_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Law's Order Rod",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Rod_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Law's Order Index",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Index_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Law's Order Rapier",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Rapier_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Law's Order Cane",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Cane_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 16,
+      wpnName: "Law's Order Codex",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Codex_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 17,
+      wpnName: "Law's Order Astrometer",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Astrometer_Icon.png",
       isSelected: false
     }
   ]
