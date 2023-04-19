@@ -13,7 +13,7 @@ function CheckUncheck({ checkAll, uncheckAll, weapons, type }) {
   }));
 
   return (
-    <div className="flex flex-col gap-6 py-5 sm:flex-row">
+    <div className="flex flex-col gap-6 pt-6 sm:flex-row">
       <Button
         onClick={() => checkAll(allChecked, type)}
         check

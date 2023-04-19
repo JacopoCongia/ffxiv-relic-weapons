@@ -75,6 +75,22 @@ const data = {
       reqTotal: 255,
       reqPerWeapon: 15,
       type: "lawsOrder"
+    },
+    {
+      id: 8,
+      name: "Timeworn Artifact",
+      icon: "/icons/shadowbringers-icons/materials/Timeworn_Artifact_Icon.png",
+      reqTotal: 255,
+      reqPerWeapon: 15,
+      type: "augmentedLawsOrder"
+    },
+    {
+      id: 9,
+      name: "Raw Emotion",
+      icon: "/icons/shadowbringers-icons/materials/Raw_Emotion_Icon.png",
+      reqTotal: 255,
+      reqPerWeapon: 15,
+      type: "blades"
     }
   ],
   manderville: [
@@ -982,6 +998,298 @@ const data = {
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
       icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Astrometer_Icon.png",
+      isSelected: false
+    }
+  ],
+  augmentedLawsOrder: [
+    {
+      id: 0,
+      wpnName: "Augmented Law's Order Bastard Sword",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Bastard_Sword_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Augmented Law's Order Kite Shield",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Kite_Shield_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Augmented Law's Order Labrys",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Labrys_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Augmented Law's Order Zweihander",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Zweihander_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Augmented Law's Order Manatrigger",
+      wpnJob: "Gunbreaker",
+      wpnJobShort: "GNB",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Manatrigger_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Augmented Law's Order Spear",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Spear_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Augmented Law's Order Knuckles",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Knuckles_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Augmented Law's Order Samurai Blade",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Samurai_Blade_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Augmented Law's Order Knives",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Knives_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Augmented Law's Order Composite Bow",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Composite_Bow_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Augmented Law's Order Revolver",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Revolver_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Augmented Law's Order Chakrams",
+      wpnJob: "Dancer",
+      wpnJobShort: "DNC",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Chakrams_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Augmented Law's Order Rod",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Rod_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Augmented Law's Order Index",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Index_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Augmented Law's Order Rapier",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Rapier_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Augmented Law's Order Cane",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Cane_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 16,
+      wpnName: "Augmented Law's Order Codex",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Codex_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 17,
+      wpnName: "Augmented Law's Order Astrometer",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Astrometer_Icon.png",
+      isSelected: false
+    }
+  ],
+  blades: [
+    {
+      id: 0,
+      wpnName: "Blade's Honor",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Honor_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Blade's Fortitude",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Fortitude_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Blade's Valor",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Valor_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Blade's Justice",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Justice_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Blade's Resolve",
+      wpnJob: "Gunbreaker",
+      wpnJobShort: "GNB",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Resolve_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Blade's Glory",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Glory_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Blade's Serenity",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Serenity_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Blade's Fealty",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Fealty_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Blade's Subtlety",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Subtlety_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Blade's Muse",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Muse_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Blade's Ingenuity",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Ingenuity_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Blade's Euphoria",
+      wpnJob: "Dancer",
+      wpnJobShort: "DNC",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Euphoria_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Blade's Fury",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Fury_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Blade's Acumen",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Acumen_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Blade's Temperance",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Temperance_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Blade's Mercy",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Mercy_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 16,
+      wpnName: "Blade's Wisdom",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Wisdom_Icon.png",
+      isSelected: false
+    },
+    {
+      id: 17,
+      wpnName: "Blade's Providence",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/shadowbringers-icons/blades/Blade's_Providence_Icon.png",
       isSelected: false
     }
   ]

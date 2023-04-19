@@ -1,78 +1,28 @@
-import { useEffect, useState } from "react";
 import data from "../data";
+import useWeaponsData from "@/hooks/use-weapons-data";
 import Header from "../components/Header";
 import WeaponsHeader from "../components/WeaponsHeader";
 import WeaponsContainer from "../components/WeaponsContainer";
-import MaterialsContainer from "../components/MaterialsContainer";
 import CheckUncheck from "../components/CheckUncheck";
+import MaterialsContainer from "../components/MaterialsContainer";
 import Navbar from "../components/Navbar";
 
 function Endwalker() {
-  const [weapons, setWeapons] = useState(data);
-  const [visibility, setVisibility] = useState({
-    weapons: true,
-    amazingWeapons: true
-  });
+  const {
+    weapons,
+    visibility,
+    selectWeapon,
+    checkAll,
+    uncheckAll,
+    handleVisibility
+  } = useWeaponsData();
 
   const weaponsTruths = weapons.manderville.filter((weapon) =>
-    weapon.wpnName === "Manderville Kite Shield" ? null : !weapon.isSelected
+    weapon.id === 1 ? null : !weapon.isSelected
   );
   const amazingWeaponsTruths = weapons.amazingManderville.filter((weapon) =>
-    weapon.wpnName === "Amazing Manderville Kite Shield"
-      ? null
-      : !weapon.isSelected
+    weapon.id === 1 ? null : !weapon.isSelected
   );
-
-  function selectWeapon(name, key, wpnCategory) {
-    setWeapons((oldWeapons) => ({
-      ...oldWeapons,
-      [key]: wpnCategory.map((weapon) => {
-        return weapon.wpnName === name
-          ? {
-              ...weapon,
-              isSelected: !weapon.isSelected
-            }
-          : weapon;
-      })
-    }));
-  }
-
-  function checkAll(allChecked, type) {
-    setWeapons({
-      ...weapons,
-      [type]: allChecked
-    });
-  }
-
-  function uncheckAll(allUnchecked, type) {
-    setWeapons({
-      ...weapons,
-      [type]: allUnchecked
-    });
-  }
-
-  function handleVisibility(key, value) {
-    setVisibility((prevVisibility) => ({
-      ...prevVisibility,
-      [key]: !value
-    }));
-  }
-
-  useEffect(() => {
-    let storedWeapons = JSON.parse(localStorage.getItem("weapons")) || data;
-    let storedVisibility =
-      JSON.parse(localStorage.getItem("visibility")) || visibility;
-
-    setWeapons(storedWeapons);
-    setVisibility(storedVisibility);
-  }, []);
-
-  useEffect(() => {
-    if (weapons !== data) {
-      localStorage.setItem("weapons", JSON.stringify(weapons));
-      localStorage.setItem("visibility", JSON.stringify(visibility));
-    }
-  }, [weapons, visibility]);
 
   return (
     <div>
@@ -80,13 +30,15 @@ function Endwalker() {
       <Header title="Manderville" />
       <WeaponsHeader
         weaponsTruths={weaponsTruths.length}
-        handleVisibility={() => handleVisibility("weapons", visibility.weapons)}
-        visibility={visibility.weapons}
+        handleVisibility={() =>
+          handleVisibility("manderville", visibility.manderville)
+        }
+        visibility={visibility.manderville}
         totalWeapons={19}
         name="Manderville Weapons"
         patchInfo="iLvl 615 (Patch 6.25)"
       />
-      {visibility.weapons && (
+      {visibility.manderville && (
         <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
           <WeaponsContainer
             weapons={weapons.manderville}
@@ -111,14 +63,14 @@ function Endwalker() {
       <WeaponsHeader
         weaponsTruths={amazingWeaponsTruths.length}
         handleVisibility={() =>
-          handleVisibility("amazingWeapons", visibility.amazingWeapons)
+          handleVisibility("amazingManderville", visibility.amazingManderville)
         }
-        visibility={visibility.amazingWeapons}
+        visibility={visibility.amazingManderville}
         totalWeapons={19}
         name="Amazing Manderville Weapons"
         patchInfo="iLvl 630 (Patch 6.35)"
       />
-      {visibility.amazingWeapons && (
+      {visibility.amazingManderville && (
         <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
           <WeaponsContainer
             weapons={weapons.amazingManderville}
