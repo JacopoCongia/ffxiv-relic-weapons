@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import data from "../data";
+import useWeaponsData from "@/hooks/use-weapons-data";
 import Header from "../components/Header";
 import WeaponsHeader from "../components/WeaponsHeader";
 import WeaponsContainer from "../components/WeaponsContainer";
@@ -8,77 +8,33 @@ import MaterialsContainer from "../components/MaterialsContainer";
 import Navbar from "../components/Navbar";
 
 function Shadowbringers() {
-  const [weapons, setWeapons] = useState(data);
-  const [visibility, setVisibility] = useState({
-    weapons: true,
-    augmentedWeapons: true,
-    recollection: true,
-    lawsOrder: true
-  });
+  const {
+    weapons,
+    visibility,
+    selectWeapon,
+    checkAll,
+    uncheckAll,
+    handleVisibility
+  } = useWeaponsData();
 
   const weaponsTruths = weapons.resistance.filter((weapon) =>
-    weapon.wpnName === "Tenacity" ? null : !weapon.isSelected
+    weapon.id === 1 ? null : !weapon.isSelected
   );
   const augmentedWeaponsTruths = weapons.augmentedResistance.filter((weapon) =>
-    weapon.wpnName === "Augmented Tenacity" ? null : !weapon.isSelected
+    weapon.id === 1 ? null : !weapon.isSelected
   );
   const recollectionWeaponsTruths = weapons.recollection.filter((weapon) =>
-    weapon.wpnName === "Tenacity Recollection" ? null : !weapon.isSelected
+    weapon.id === 1 ? null : !weapon.isSelected
   );
   const lawsOrderWeaponsTruths = weapons.lawsOrder.filter((weapon) =>
-    weapon.wpnName === "Law's Order Kite Shield" ? null : !weapon.isSelected
+    weapon.id === 1 ? null : !weapon.isSelected
   );
-
-  function selectWeapon(name, key, wpnCategory) {
-    setWeapons((oldWeapons) => ({
-      ...oldWeapons,
-      [key]: wpnCategory.map((weapon) => {
-        return weapon.wpnName === name
-          ? {
-              ...weapon,
-              isSelected: !weapon.isSelected
-            }
-          : weapon;
-      })
-    }));
-  }
-
-  function checkAll(allChecked, type) {
-    setWeapons({
-      ...weapons,
-      [type]: allChecked
-    });
-  }
-
-  function uncheckAll(allUnchecked, type) {
-    setWeapons({
-      ...weapons,
-      [type]: allUnchecked
-    });
-  }
-
-  function handleVisibility(key, value) {
-    setVisibility((prevVisibility) => ({
-      ...prevVisibility,
-      [key]: !value
-    }));
-  }
-
-  useEffect(() => {
-    let storedWeapons = JSON.parse(localStorage.getItem("weapons")) || data;
-    let storedVisibility =
-      JSON.parse(localStorage.getItem("visibility")) || visibility;
-
-    setWeapons(storedWeapons);
-    setVisibility(storedVisibility);
-  }, []);
-
-  useEffect(() => {
-    if (weapons !== data) {
-      localStorage.setItem("weapons", JSON.stringify(weapons));
-      localStorage.setItem("visibility", JSON.stringify(visibility));
-    }
-  }, [weapons, visibility]);
+  const augmentedLawsOrderWeaponsTruths = weapons.augmentedLawsOrder.filter(
+    (weapon) => (weapon.id === 1 ? null : !weapon.isSelected)
+  );
+  const bladesWeaponsTruths = weapons.blades.filter((weapon) =>
+    weapon.id === 1 ? null : !weapon.isSelected
+  );
 
   return (
     <div>
@@ -86,13 +42,15 @@ function Shadowbringers() {
       <Header title="Resistance" />
       <WeaponsHeader
         weaponsTruths={weaponsTruths.length}
-        handleVisibility={() => handleVisibility("weapons", visibility.weapons)}
-        visibility={visibility.weapons}
+        handleVisibility={() =>
+          handleVisibility("resistance", visibility.resistance)
+        }
+        visibility={visibility.resistance}
         totalWeapons={17}
         name="Resistance Weapons"
         patchInfo="iLvl 485 (Patch 5.25)"
       />
-      {visibility.weapons && (
+      {visibility.resistance && (
         <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
           <WeaponsContainer
             weapons={weapons.resistance}
@@ -117,14 +75,17 @@ function Shadowbringers() {
       <WeaponsHeader
         weaponsTruths={augmentedWeaponsTruths.length}
         handleVisibility={() =>
-          handleVisibility("augmentedWeapons", visibility.augmentedWeapons)
+          handleVisibility(
+            "augmentedResistance",
+            visibility.augmentedResistance
+          )
         }
-        visibility={visibility.augmentedWeapons}
+        visibility={visibility.augmentedResistance}
         totalWeapons={17}
         name="Augmented Resistance Weapons"
         patchInfo="iLvl 500 (Patch 5.35)"
       />
-      {visibility.augmentedWeapons && (
+      {visibility.augmentedResistance && (
         <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
           <WeaponsContainer
             weapons={weapons.augmentedResistance}
@@ -184,7 +145,7 @@ function Shadowbringers() {
         visibility={visibility.lawsOrder}
         totalWeapons={17}
         name="Law's Order Weapons"
-        patchInfo="iLvl 515 (Patch 5.45)"
+        patchInfo="iLvl 510 (Patch 5.45)"
       />
       {visibility.lawsOrder && (
         <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
@@ -202,6 +163,66 @@ function Shadowbringers() {
           <CheckUncheck
             weapons={weapons.lawsOrder}
             type="lawsOrder"
+            checkAll={checkAll}
+            uncheckAll={uncheckAll}
+          />
+        </div>
+      )}
+      <WeaponsHeader
+        weaponsTruths={augmentedLawsOrderWeaponsTruths.length}
+        handleVisibility={() =>
+          handleVisibility("augmentedLawsOrder", visibility.augmentedLawsOrder)
+        }
+        visibility={visibility.augmentedLawsOrder}
+        totalWeapons={17}
+        name="Augmented Law's Order Weapons"
+        patchInfo="iLvl 515 (Patch 5.45)"
+      />
+      {visibility.augmentedLawsOrder && (
+        <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
+          <WeaponsContainer
+            weapons={weapons.augmentedLawsOrder}
+            type="augmentedLawsOrder"
+            selectWeapon={selectWeapon}
+          />
+          <MaterialsContainer
+            materials={data.materials}
+            type="augmentedLawsOrder"
+            tomestones={null}
+            weaponsTruths={augmentedLawsOrderWeaponsTruths}
+          />
+          <CheckUncheck
+            weapons={weapons.augmentedLawsOrder}
+            type="augmentedLawsOrder"
+            checkAll={checkAll}
+            uncheckAll={uncheckAll}
+          />
+        </div>
+      )}
+      <WeaponsHeader
+        weaponsTruths={bladesWeaponsTruths.length}
+        handleVisibility={() => handleVisibility("blades", visibility.blades)}
+        visibility={visibility.blades}
+        totalWeapons={17}
+        name="Blade's Weapons"
+        patchInfo="iLvl 535 (Patch 5.55)"
+      />
+      {visibility.blades && (
+        <div className="flex flex-col items-center bg-stone-800 p-10 text-white">
+          <WeaponsContainer
+            weapons={weapons.blades}
+            type="blades"
+            selectWeapon={selectWeapon}
+          />
+          <MaterialsContainer
+            materials={data.materials}
+            type="blades"
+            tomestones={null}
+            weaponsTruths={bladesWeaponsTruths}
+          />
+          <CheckUncheck
+            weapons={weapons.blades}
+            type="blades"
             checkAll={checkAll}
             uncheckAll={uncheckAll}
           />

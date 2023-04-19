@@ -16,6 +16,16 @@ export default function Home() {
       id: 2,
       title: "Stormblood - Eurekan Weapons - (Coming Soon)",
       url: "/"
+    },
+    {
+      id: 3,
+      title: "Heavensward - Anima Weapons - (Coming Soon)",
+      url: "/"
+    },
+    {
+      id: 4,
+      title: "A Realm Reborn - Zodiac Weapons - (Coming Soon)",
+      url: "/"
     }
   ];
 
@@ -25,7 +35,7 @@ export default function Home() {
         key={element.id}
         href={element.url}
       >
-        <div className="text-5 text-10 cursor-pointer bg-teal-700 p-7 text-2xl hover:opacity-90">
+        <div className="text-5 text-10 mb-[1px] cursor-pointer bg-teal-700 p-7 text-2xl hover:opacity-90">
           <h2>{element.title}</h2>
         </div>
       </Link>
