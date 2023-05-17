@@ -19,7 +19,7 @@ function MaterialsContainer({
           <img
             className="w-5"
             alt={tomestones.name}
-            src={tomestoneType.icon}
+            src={tomestones.icon}
           />
           {tomestones.name}: {weaponsCounter.length * tomestoneAmount}
         </p>
