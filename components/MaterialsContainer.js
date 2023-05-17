@@ -18,10 +18,10 @@ function MaterialsContainer({
         <p className="flex items-center gap-3">
           <img
             className="w-5"
-            // alt={tomestoneType.name}
-            // src={tomestoneType.icon}
+            alt={tomestoneType.name}
+            src={tomestoneType.icon}
           />
-          {/* {tomestoneType.name}: {weaponsCounter.length * tomestoneAmount} */}
+          {tomestoneType.name}: {weaponsCounter.length * tomestoneAmount}
         </p>
       )}
       <Materials
