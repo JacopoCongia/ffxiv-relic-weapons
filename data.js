@@ -2,8 +2,8 @@ const data = {
   tomestones: [
     {
       id: 0,
-      name: "Allagan Tomestones of Astronomy",
-      icon: "/icons/Allagan_Tomestone_of_Astronomy_Icon.png"
+      name: "Allagan Tomestones of Causality",
+      icon: "/icons/Allagan_Tomestone_of_Causality_Icon.png"
     },
     {
       id: 1,

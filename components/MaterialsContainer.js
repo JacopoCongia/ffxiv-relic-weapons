@@ -2,11 +2,11 @@ import React from "react";
 import Materials from "./Materials";
 
 function MaterialsContainer({
-  tomestones,
+  tomestoneType,
   tomestoneAmount,
   materials,
   type,
-  weaponsTruths
+  weaponsCounter
 }) {
   const updatedMaterials = materials.filter(
     (material) => material.type === type
@@ -14,19 +14,19 @@ function MaterialsContainer({
 
   return (
     <div className="flex flex-col items-start gap-2 pt-6 text-[18px]">
-      {tomestones !== null && (
+      {tomestoneType !== null && (
         <p className="flex items-center gap-3">
           <img
             className="w-5"
-            alt={tomestones.name}
-            src={tomestones.icon}
+            // alt={tomestoneType.name}
+            // src={tomestoneType.icon}
           />
-          {tomestones.name}: {weaponsTruths.length * tomestoneAmount}
+          {/* {tomestoneType.name}: {weaponsCounter.length * tomestoneAmount} */}
         </p>
       )}
       <Materials
         materials={updatedMaterials}
-        weaponsTruths={weaponsTruths}
+        weaponsCounter={weaponsCounter}
       />
     </div>
   );

@@ -5,12 +5,12 @@ function WeaponsHeader({
   visibility,
   handleVisibility,
   totalWeapons,
-  weaponsTruths,
+  weaponsCounter,
   name,
   patchInfo
 }) {
   const check =
-    totalWeapons - weaponsTruths === totalWeapons ? (
+    totalWeapons - weaponsCounter === totalWeapons ? (
       <GoCheck className="mr-2 text-[20px] text-green-500 sm:text-[28px]" />
     ) : null;
 
@@ -20,7 +20,7 @@ function WeaponsHeader({
       onClick={handleVisibility}
     >
       <p className="flex items-center font-bold ">
-        {check} {totalWeapons - weaponsTruths}/{totalWeapons}
+        {check} {totalWeapons - weaponsCounter}/{totalWeapons}
       </p>
       <h4 className="ml-auto mr-auto text-center text-[18px] font-bold sm:text-[24px]">
         {name}
