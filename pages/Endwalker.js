@@ -6,6 +6,7 @@ import WeaponsContainer from "../components/WeaponsContainer";
 import CheckUncheck from "../components/CheckUncheck";
 import MaterialsContainer from "../components/MaterialsContainer";
 import Navbar from "../components/Navbar";
+import useWeaponsCounter from "@/hooks/use-weapons-counter";
 
 function Endwalker() {
   const {
@@ -17,11 +18,9 @@ function Endwalker() {
     handleVisibility
   } = useWeaponsData();
 
-  const weaponsTruths = weapons.manderville.filter((weapon) =>
-    weapon.id === 1 ? null : !weapon.isSelected
-  );
-  const amazingWeaponsTruths = weapons.amazingManderville.filter((weapon) =>
-    weapon.id === 1 ? null : !weapon.isSelected
+  const mandervilleCounter = useWeaponsCounter(weapons.manderville);
+  const amazingMandervilleCounter = useWeaponsCounter(
+    weapons.amazingManderville
   );
 
   return (
@@ -29,7 +28,8 @@ function Endwalker() {
       <Navbar title="Endwalker" />
       <Header title="Manderville" />
       <WeaponsHeader
-        weaponsTruths={weaponsTruths.length}
+        weaponsCounter={mandervilleCounter.length}
+        weapons={weapons.manderville}
         handleVisibility={() =>
           handleVisibility("manderville", visibility.manderville)
         }
@@ -50,7 +50,7 @@ function Endwalker() {
             type="manderville"
             tomestones={data.tomestones[0]}
             tomestoneAmount={1500}
-            weaponsTruths={weaponsTruths}
+            weaponsCounter={mandervilleCounter}
           />
           <CheckUncheck
             weapons={weapons.manderville}
@@ -61,7 +61,7 @@ function Endwalker() {
         </div>
       )}
       <WeaponsHeader
-        weaponsTruths={amazingWeaponsTruths.length}
+        weaponsCounter={amazingMandervilleCounter.length}
         handleVisibility={() =>
           handleVisibility("amazingManderville", visibility.amazingManderville)
         }
@@ -82,7 +82,7 @@ function Endwalker() {
             type="amazingManderville"
             tomestones={data.tomestones[0]}
             tomestoneAmount={1500}
-            weaponsTruths={amazingWeaponsTruths}
+            weaponsCounter={amazingMandervilleCounter}
           />
           <CheckUncheck
             weapons={weapons.amazingManderville}

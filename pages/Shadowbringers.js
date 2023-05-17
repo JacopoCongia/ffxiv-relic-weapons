@@ -6,6 +6,7 @@ import WeaponsContainer from "../components/WeaponsContainer";
 import CheckUncheck from "../components/CheckUncheck";
 import MaterialsContainer from "../components/MaterialsContainer";
 import Navbar from "../components/Navbar";
+import useWeaponsCounter from "@/hooks/use-weapons-counter";
 
 function Shadowbringers() {
   const {
@@ -17,31 +18,23 @@ function Shadowbringers() {
     handleVisibility
   } = useWeaponsData();
 
-  const weaponsTruths = weapons.resistance.filter((weapon) =>
-    weapon.id === 1 ? null : !weapon.isSelected
+  const resistanceCounter = useWeaponsCounter(weapons.resistance);
+  const augmentedResistanceCounter = useWeaponsCounter(
+    weapons.augmentedResistance
   );
-  const augmentedWeaponsTruths = weapons.augmentedResistance.filter((weapon) =>
-    weapon.id === 1 ? null : !weapon.isSelected
+  const recollectionCounter = useWeaponsCounter(weapons.recollection);
+  const lawsOrderCounter = useWeaponsCounter(weapons.lawsOrder);
+  const augmentedLawsOrderCounter = useWeaponsCounter(
+    weapons.augmentedLawsOrder
   );
-  const recollectionWeaponsTruths = weapons.recollection.filter((weapon) =>
-    weapon.id === 1 ? null : !weapon.isSelected
-  );
-  const lawsOrderWeaponsTruths = weapons.lawsOrder.filter((weapon) =>
-    weapon.id === 1 ? null : !weapon.isSelected
-  );
-  const augmentedLawsOrderWeaponsTruths = weapons.augmentedLawsOrder.filter(
-    (weapon) => (weapon.id === 1 ? null : !weapon.isSelected)
-  );
-  const bladesWeaponsTruths = weapons.blades.filter((weapon) =>
-    weapon.id === 1 ? null : !weapon.isSelected
-  );
+  const bladesCounter = useWeaponsCounter(weapons.blades);
 
   return (
     <div>
       <Navbar title="Shadowbringers" />
       <Header title="Resistance" />
       <WeaponsHeader
-        weaponsTruths={weaponsTruths.length}
+        weaponsCounter={resistanceCounter.length}
         handleVisibility={() =>
           handleVisibility("resistance", visibility.resistance)
         }
@@ -62,7 +55,7 @@ function Shadowbringers() {
             type="resistance"
             tomestones={data.tomestones[1]}
             tomestoneAmount={1000}
-            weaponsTruths={weaponsTruths}
+            weaponsCounter={resistanceCounter}
           />
           <CheckUncheck
             weapons={weapons.resistance}
@@ -73,7 +66,7 @@ function Shadowbringers() {
         </div>
       )}
       <WeaponsHeader
-        weaponsTruths={augmentedWeaponsTruths.length}
+        weaponsCounter={augmentedResistanceCounter.length}
         handleVisibility={() =>
           handleVisibility(
             "augmentedResistance",
@@ -96,7 +89,7 @@ function Shadowbringers() {
             materials={data.materials}
             type="augmentedResistance"
             tomestones={null}
-            weaponsTruths={augmentedWeaponsTruths}
+            weaponsCounter={augmentedResistanceCounter}
           />
           <CheckUncheck
             weapons={weapons.augmentedResistance}
@@ -107,7 +100,7 @@ function Shadowbringers() {
         </div>
       )}
       <WeaponsHeader
-        weaponsTruths={recollectionWeaponsTruths.length}
+        weaponsCounter={recollectionCounter.length}
         handleVisibility={() =>
           handleVisibility("recollection", visibility.recollection)
         }
@@ -127,7 +120,7 @@ function Shadowbringers() {
             materials={data.materials}
             type="recollection"
             tomestones={null}
-            weaponsTruths={recollectionWeaponsTruths}
+            weaponsCounter={recollectionCounter}
           />
           <CheckUncheck
             weapons={weapons.recollection}
@@ -138,7 +131,7 @@ function Shadowbringers() {
         </div>
       )}
       <WeaponsHeader
-        weaponsTruths={lawsOrderWeaponsTruths.length}
+        weaponsCounter={lawsOrderCounter.length}
         handleVisibility={() =>
           handleVisibility("lawsOrder", visibility.lawsOrder)
         }
@@ -158,7 +151,7 @@ function Shadowbringers() {
             materials={data.materials}
             type="lawsOrder"
             tomestones={null}
-            weaponsTruths={lawsOrderWeaponsTruths}
+            weaponsCounter={lawsOrderCounter}
           />
           <CheckUncheck
             weapons={weapons.lawsOrder}
@@ -169,7 +162,7 @@ function Shadowbringers() {
         </div>
       )}
       <WeaponsHeader
-        weaponsTruths={augmentedLawsOrderWeaponsTruths.length}
+        weaponsCounter={augmentedLawsOrderCounter.length}
         handleVisibility={() =>
           handleVisibility("augmentedLawsOrder", visibility.augmentedLawsOrder)
         }
@@ -189,7 +182,7 @@ function Shadowbringers() {
             materials={data.materials}
             type="augmentedLawsOrder"
             tomestones={null}
-            weaponsTruths={augmentedLawsOrderWeaponsTruths}
+            weaponsCounter={augmentedLawsOrderCounter}
           />
           <CheckUncheck
             weapons={weapons.augmentedLawsOrder}
@@ -200,7 +193,7 @@ function Shadowbringers() {
         </div>
       )}
       <WeaponsHeader
-        weaponsTruths={bladesWeaponsTruths.length}
+        weaponsCounter={bladesCounter.length}
         handleVisibility={() => handleVisibility("blades", visibility.blades)}
         visibility={visibility.blades}
         totalWeapons={17}
@@ -218,7 +211,7 @@ function Shadowbringers() {
             materials={data.materials}
             type="blades"
             tomestones={null}
-            weaponsTruths={bladesWeaponsTruths}
+            weaponsCounter={bladesCounter}
           />
           <CheckUncheck
             weapons={weapons.blades}
