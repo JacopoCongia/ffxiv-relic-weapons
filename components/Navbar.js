@@ -32,7 +32,15 @@ function Navbar({ title }) {
             Shadowbringers
           </h1>
         </Link>
-        <h1 className={inactiveStyle}>Stormblood</h1>
+        <Link href="/Stormblood">
+          <h1
+            className={
+              currentRoute === "/Stormblood" ? activeStyle : inactiveStyle
+            }
+          >
+            Stormblood
+          </h1>
+        </Link>
         <h1 className={inactiveStyle}>Heavensward</h1>
         <h1 className={inactiveStyle}>A Realm Reborn</h1>
       </div>
@@ -66,7 +74,15 @@ function Navbar({ title }) {
               Shadowbringers
             </h1>
           </Link>
-          <h1 className={inactiveStyle}>Stormblood</h1>
+          <Link href="/Stormblood">
+            <h1
+              className={
+                currentRoute === "/Stormblood" ? activeStyle : inactiveStyle
+              }
+            >
+              Stormblood
+            </h1>
+          </Link>
           <h1 className={inactiveStyle}>Heavensward</h1>
           <h1 className={inactiveStyle}>A Realm Reborn</h1>
         </div>

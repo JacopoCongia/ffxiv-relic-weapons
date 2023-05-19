@@ -91,6 +91,70 @@ const data = {
       reqTotal: 255,
       reqPerWeapon: 15,
       type: "blades"
+    },
+    {
+      id: 10,
+      name: "Gil",
+      icon: "/icons/stormblood-icons/materials/gil.png",
+      reqTotal: 15000,
+      reqPerWeapon: 1000,
+      type: "antiquated"
+    },
+    {
+      id: 11,
+      name: "Protean Crystal",
+      icon: "/icons/stormblood-icons/materials/protean_crystal.png",
+      reqTotal: 19500,
+      reqPerWeapon: 1300,
+      type: "anemos"
+    },
+    {
+      id: 12,
+      name: "Pazuzu's Feather",
+      icon: "/icons/stormblood-icons/materials/pazuzus_feather.png",
+      reqTotal: 45,
+      reqPerWeapon: 3,
+      type: "anemos"
+    },
+    {
+      id: 13,
+      name: "Pagos Crystal",
+      icon: "/icons/stormblood-icons/materials/pagos_crystal.png",
+      reqTotal: 7500,
+      reqPerWeapon: 500,
+      type: "elemental"
+    },
+    {
+      id: 14,
+      name: "Frosted Protean Crystal",
+      icon: "/icons/stormblood-icons/materials/frosted_protean_crystal.png",
+      reqTotal: 465,
+      reqPerWeapon: 31,
+      type: "elemental"
+    },
+    {
+      id: 15,
+      name: "Louhi's Ice",
+      icon: "/icons/stormblood-icons/materials/louhis_ice.png",
+      reqTotal: 75,
+      reqPerWeapon: 5,
+      type: "elemental"
+    },
+    {
+      id: 16,
+      name: "Pyros Crystal",
+      icon: "/icons/stormblood-icons/materials/pyros_crystal.png",
+      reqTotal: 9750,
+      reqPerWeapon: 650,
+      type: "pyros"
+    },
+    {
+      id: 17,
+      name: "Penthesilea's Flame",
+      icon: "/icons/stormblood-icons/materials/penthesileas_flame.png",
+      reqTotal: 75,
+      reqPerWeapon: 5,
+      type: "pyros"
     }
   ],
   manderville: [
@@ -1290,6 +1354,526 @@ const data = {
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
       icon: "/icons/shadowbringers-icons/blades/Blade's_Providence_Icon.png",
+      isSelected: false
+    }
+  ],
+  antiquated: [
+    {
+      id: 0,
+      wpnName: "Antiquated Galatyn",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_galatyn.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Antiquated Evalach",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_evalach.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Antiquated Farsha",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_farsha.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Antiquated Caladbolg",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_caladbolg.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Antiquated Ryunohige",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_ryunohige.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Antiquated Sudarshana Chakra",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_sudarshana_chakra.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Antiquated Kiku-ichimonji",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_kiku-ichimonji.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Antiquated Nagi",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_nagi.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Antiquated Failnaught",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_failnaught.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Antiquated Outsider",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_outsider.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Antiquated Vanargand",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_vanargand.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Antiquated Lemegeton",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_lemegeton.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Antiquated Murgleis",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_murgleis.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Antiquated Aymur",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_aymur.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Antiquated Organum",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_organum.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Antiquated Pleiades",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/stormblood-icons/antiquated/antiquated_pleiades.png",
+      isSelected: false
+    }
+  ],
+  anemos: [
+    {
+      id: 0,
+      wpnName: "Galatyn Anemos",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/anemos/galatyn_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Evalach Anemos",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/anemos/evalach_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Farsha Anemos",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/stormblood-icons/anemos/farsha_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Caladbolg Anemos",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/stormblood-icons/anemos/caladbolg_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Ryunohige Anemos",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/stormblood-icons/anemos/ryunohige_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Sudarshana Chakra Anemos",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/stormblood-icons/anemos/sudarshana_chakra_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Kiku-ichimonji Anemos",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/stormblood-icons/anemos/kiku-ichimonji_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Nagi Anemos",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/stormblood-icons/anemos/nagi_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Failnaught Anemos",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/stormblood-icons/anemos/failnaught_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Outsider Anemos",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/stormblood-icons/anemos/outsider_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Vanargand Anemos",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/stormblood-icons/anemos/vanargand_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Lemegeton Anemos",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/stormblood-icons/anemos/lemegeton_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Murgleis Anemos",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/stormblood-icons/anemos/murgleis_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Aymur Anemos",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/stormblood-icons/anemos/aymur_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Organum Anemos",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/stormblood-icons/anemos/organum_anemos.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Pleiades Anemos",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/stormblood-icons/anemos/pleiades_anemos.png",
+      isSelected: false
+    }
+  ],
+  elemental: [
+    {
+      id: 0,
+      wpnName: "Elemental Sword",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/elemental/elemental_sword.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Elemental Shield",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/elemental/elemental_shield.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Elemental Battleaxe",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/stormblood-icons/elemental/elemental_battleaxe.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Elemental Guillotine",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/stormblood-icons/elemental/elemental_guillotine.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Elemental Lance",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/stormblood-icons/elemental/elemental_lance.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Elemental Knuckles",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/stormblood-icons/elemental/elemental_knuckles.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Elemental Blade",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/stormblood-icons/elemental/elemental_blade.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Elemental Knives",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/stormblood-icons/elemental/elemental_knives.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Elemental Harp Bow",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/stormblood-icons/elemental/elemental_harp_bow.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Elemental Handgonne",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/stormblood-icons/elemental/elemental_handgonne.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Elemental Rod",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/stormblood-icons/elemental/elemental_rod.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Elemental Grimoire",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/stormblood-icons/elemental/elemental_grimoire.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Elemental Tuck",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/stormblood-icons/elemental/elemental_tuck.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Elemental Cane",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/stormblood-icons/elemental/elemental_cane.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Elemental Codex",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/stormblood-icons/elemental/elemental_codex.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Elemental Astrometer",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/stormblood-icons/elemental/elemental_astrometer.png",
+      isSelected: false
+    }
+  ],
+  pyros: [
+    {
+      id: 0,
+      wpnName: "Pyros Sword",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/pyros/pyros_sword.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Pyros Shield",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/pyros/pyros_shield.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Pyros Battleaxe",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/stormblood-icons/pyros/pyros_battleaxe.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Pyros Guillotine",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/stormblood-icons/pyros/pyros_guillotine.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Pyros Lance",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/stormblood-icons/pyros/pyros_lance.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Pyros Knuckles",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/stormblood-icons/pyros/pyros_knuckles.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Pyros Blade",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/stormblood-icons/pyros/pyros_blade.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Pyros Knives",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/stormblood-icons/pyros/pyros_knives.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Pyros Harp Bow",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/stormblood-icons/pyros/pyros_harp_bow.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Pyros Handgonne",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/stormblood-icons/pyros/pyros_handgonne.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Pyros Rod",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/stormblood-icons/pyros/pyros_rod.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Pyros Grimoire",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/stormblood-icons/pyros/pyros_grimoire.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Pyros Tuck",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/stormblood-icons/pyros/pyros_tuck.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Pyros Cane",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/stormblood-icons/pyros/pyros_cane.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Pyros Codex",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/stormblood-icons/pyros/pyros_codex.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Pyros Astrometer",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/stormblood-icons/pyros/pyros_astrometer.png",
       isSelected: false
     }
   ]
