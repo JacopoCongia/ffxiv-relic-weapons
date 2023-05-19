@@ -14,8 +14,8 @@ export default function Home() {
     },
     {
       id: 2,
-      title: "Stormblood - Eurekan Weapons - (Coming Soon)",
-      url: "/"
+      title: "Stormblood - Eurekan Weapons - (Under Construction)",
+      url: "/Stormblood"
     },
     {
       id: 3,

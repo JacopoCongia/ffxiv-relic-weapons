@@ -17,7 +17,7 @@ function Materials({ materials, weaponsCounter }) {
     );
   });
 
-  return <div>{materialsElements}</div>;
+  return <>{materialsElements}</>;
 }
 
 export default Materials;
