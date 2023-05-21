@@ -32,7 +32,7 @@ function MaterialsContainer({
         />
       </div>
       {notes && (
-        <p className="max-w-[400px]">
+        <p className="max-w-[400px] pb-6">
           <span className="font-bold text-red-600">Notes: </span>
           {notes}
         </p>
