@@ -155,6 +155,30 @@ const data = {
       reqTotal: 75,
       reqPerWeapon: 5,
       type: "pyros"
+    },
+    {
+      id: 18,
+      name: "Hydatos Crystal",
+      icon: "/icons/stormblood-icons/materials/hydatos_crystal.png",
+      reqTotal: 5250,
+      reqPerWeapon: 350,
+      type: "eureka"
+    },
+    {
+      id: 19,
+      name: "Crystalline Scale",
+      icon: "/icons/stormblood-icons/materials/crystalline_scale.png",
+      reqTotal: 75,
+      reqPerWeapon: 5,
+      type: "eureka"
+    },
+    {
+      id: 19,
+      name: "Eureka Fragment",
+      icon: "/icons/stormblood-icons/materials/eureka_fragment.png",
+      reqTotal: 1500,
+      reqPerWeapon: 100,
+      type: "physeos"
     }
   ],
   manderville: [
@@ -1874,6 +1898,266 @@ const data = {
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
       icon: "/icons/stormblood-icons/pyros/pyros_astrometer.png",
+      isSelected: false
+    }
+  ],
+  eureka: [
+    {
+      id: 0,
+      wpnName: "Antea Eureka",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/eureka/antea_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Bellerophon Eureka",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/eureka/bellerophon_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Shamash Eureka",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/stormblood-icons/eureka/shamash_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Xiphias Eureka",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/stormblood-icons/eureka/xiphias_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Daboya Eureka",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/stormblood-icons/eureka/daboya_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Dumuzis Eureka",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/stormblood-icons/eureka/dumuzis_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Torigashira Eureka",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/stormblood-icons/eureka/torigashira_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Kasasagi Eureka",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/stormblood-icons/eureka/kasasagi_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Circinae Eureka",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/stormblood-icons/eureka/circinae_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Mollfrith Eureka",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/stormblood-icons/eureka/mollfrith_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Paikea Eureka",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/stormblood-icons/eureka/paikea_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Tuah Eureka",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/stormblood-icons/eureka/tuah_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Brunello Eureka",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/stormblood-icons/eureka/brunello_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Rose Couverte Eureka",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/stormblood-icons/eureka/rose_couverte_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Jebat Eureka",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/stormblood-icons/eureka/jebat_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Albireo Eureka",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/stormblood-icons/eureka/albireo_eureka.png",
+      isSelected: false
+    }
+  ],
+  physeos: [
+    {
+      id: 0,
+      wpnName: "Antea Physeos",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/eureka/antea_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Bellerophon Physeos",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/stormblood-icons/eureka/bellerophon_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Shamash Physeos",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/stormblood-icons/eureka/shamash_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Xiphias Physeos",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/stormblood-icons/eureka/xiphias_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Daboya Physeos",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/stormblood-icons/eureka/daboya_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Dumuzis Physeos",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/stormblood-icons/eureka/dumuzis_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Torigashira Physeos",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/stormblood-icons/eureka/torigashira_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Kasasagi Physeos",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/stormblood-icons/eureka/kasasagi_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Circinae Physeos",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/stormblood-icons/eureka/circinae_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Mollfrith Physeos",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/stormblood-icons/eureka/mollfrith_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Paikea Physeos",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/stormblood-icons/eureka/paikea_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Tuah Physeos",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/stormblood-icons/eureka/tuah_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Brunello Physeos",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/stormblood-icons/eureka/brunello_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Rose Couverte Physeos",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/stormblood-icons/eureka/rose_couverte_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Jebat Physeos",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/stormblood-icons/eureka/jebat_eureka.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Albireo Physeos",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/stormblood-icons/eureka/albireo_eureka.png",
       isSelected: false
     }
   ]

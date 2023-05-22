@@ -19,6 +19,8 @@ function Stormblood() {
   const anemosCounter = useWeaponsCounter(weapons.anemos);
   const elementalCounter = useWeaponsCounter(weapons.elemental);
   const pyrosCounter = useWeaponsCounter(weapons.pyros);
+  const eurekaCounter = useWeaponsCounter(weapons.eureka);
+  const physeosCounter = useWeaponsCounter(weapons.physeos);
 
   return (
     <div>
@@ -91,7 +93,40 @@ function Stormblood() {
         tomestoneAmount={null}
         checkAll={checkAll}
         uncheckAll={uncheckAll}
-        notes="you will also need to craft 30 different Logos Actions (10 for the first step, 20 for the second step) to unlock the ability to craft the weapons."
+        notes="you will also need to craft 30 different Logos Actions (10 for the first step, 20 for the second step) to get the weapons."
+      />
+      <WeaponsSection
+        weaponsCounter={eurekaCounter}
+        weapons={weapons.eureka}
+        handleVisibility={() => handleVisibility("eureka", visibility.eureka)}
+        visibility={visibility.eureka}
+        totalWeapons={15}
+        name="Eureka Weapons"
+        patchInfo="iLvl 405 (Patch 4.55)"
+        type="eureka"
+        selectWeapon={selectWeapon}
+        materials={data.materials}
+        tomestones={null}
+        tomestoneAmount={null}
+        checkAll={checkAll}
+        uncheckAll={uncheckAll}
+      />
+      <WeaponsSection
+        weaponsCounter={physeosCounter}
+        weapons={weapons.physeos}
+        handleVisibility={() => handleVisibility("physeos", visibility.physeos)}
+        visibility={visibility.physeos}
+        totalWeapons={15}
+        name="Physeos Weapons"
+        patchInfo="iLvl 405 (Patch 4.55)"
+        type="physeos"
+        selectWeapon={selectWeapon}
+        materials={data.materials}
+        tomestones={null}
+        tomestoneAmount={null}
+        checkAll={checkAll}
+        uncheckAll={uncheckAll}
+        notes="you can get Eureka Fragments from The Baldesion Arsenal"
       />
     </div>
   );
