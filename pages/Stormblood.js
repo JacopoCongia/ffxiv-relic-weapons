@@ -20,6 +20,7 @@ function Stormblood() {
   const elementalCounter = useWeaponsCounter(weapons.elemental);
   const pyrosCounter = useWeaponsCounter(weapons.pyros);
   const eurekaCounter = useWeaponsCounter(weapons.eureka);
+  const physeosCounter = useWeaponsCounter(weapons.physeos);
 
   return (
     <div>
@@ -109,6 +110,23 @@ function Stormblood() {
         tomestoneAmount={null}
         checkAll={checkAll}
         uncheckAll={uncheckAll}
+      />
+      <WeaponsSection
+        weaponsCounter={physeosCounter}
+        weapons={weapons.physeos}
+        handleVisibility={() => handleVisibility("physeos", visibility.physeos)}
+        visibility={visibility.physeos}
+        totalWeapons={15}
+        name="Physeos Weapons"
+        patchInfo="iLvl 405 (Patch 4.55)"
+        type="physeos"
+        selectWeapon={selectWeapon}
+        materials={data.materials}
+        tomestones={null}
+        tomestoneAmount={null}
+        checkAll={checkAll}
+        uncheckAll={uncheckAll}
+        notes="you can get Eureka Fragments from The Baldesion Arsenal"
       />
     </div>
   );

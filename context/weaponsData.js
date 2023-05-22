@@ -51,21 +51,21 @@ function WeaponsDataProvider({ children }) {
     }));
   }
 
-  // useEffect(() => {
-  //   let storedWeapons = JSON.parse(localStorage.getItem("weapons")) || data;
-  //   let storedVisibility =
-  //     JSON.parse(localStorage.getItem("visibility")) || visibility;
+  useEffect(() => {
+    let storedWeapons = JSON.parse(localStorage.getItem("weapons")) || data;
+    let storedVisibility =
+      JSON.parse(localStorage.getItem("visibility")) || visibility;
 
-  //   setWeapons(storedWeapons);
-  //   setVisibility(storedVisibility);
-  // }, []);
+    setWeapons(storedWeapons);
+    setVisibility(storedVisibility);
+  }, []);
 
-  // useEffect(() => {
-  //   if (weapons !== data) {
-  //     localStorage.setItem("weapons", JSON.stringify(weapons));
-  //     localStorage.setItem("visibility", JSON.stringify(visibility));
-  //   }
-  // }, [weapons, visibility]);
+  useEffect(() => {
+    if (weapons !== data) {
+      localStorage.setItem("weapons", JSON.stringify(weapons));
+      localStorage.setItem("visibility", JSON.stringify(visibility));
+    }
+  }, [weapons, visibility]);
 
   const valuesToShare = {
     weapons,
