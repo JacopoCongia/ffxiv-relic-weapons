@@ -15,7 +15,18 @@ function MaterialsContainer({
 
   return (
     <>
-      <div className="flex flex-col items-start gap-2 pb-6 pt-6 text-[16px]">
+      <div
+        className="
+          flex 
+          flex-col 
+          items-start 
+          gap-2 
+          pb-6 
+          pt-6 
+          text-[0.8rem]
+          sm:text-[1rem]
+        "
+      >
         {tomestones !== null && (
           <p className="flex items-center gap-3">
             <img

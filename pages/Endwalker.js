@@ -6,14 +6,7 @@ import useWeaponsCounter from "@/hooks/use-weapons-counter";
 import WeaponsSection from "@/components/WeaponsSection";
 
 function Endwalker() {
-  const {
-    weapons,
-    visibility,
-    selectWeapon,
-    checkAll,
-    uncheckAll,
-    handleVisibility
-  } = useWeaponsData();
+  const { weapons, selectWeapon, checkAll, uncheckAll } = useWeaponsData();
 
   const mandervilleCounter = useWeaponsCounter(weapons.manderville);
   const amazingMandervilleCounter = useWeaponsCounter(
@@ -27,10 +20,6 @@ function Endwalker() {
       <WeaponsSection
         weaponsCounter={mandervilleCounter}
         weapons={weapons.manderville}
-        handleVisibility={() =>
-          handleVisibility("manderville", visibility.manderville)
-        }
-        visibility={visibility.manderville}
         totalWeapons={19}
         name="Manderville Weapons"
         patchInfo="iLvl 615 (Patch 6.25)"
@@ -45,10 +34,6 @@ function Endwalker() {
       <WeaponsSection
         weaponsCounter={amazingMandervilleCounter}
         weapons={weapons.amazingManderville}
-        handleVisibility={() =>
-          handleVisibility("amazingManderville", visibility.amazingManderville)
-        }
-        visibility={visibility.amazingManderville}
         totalWeapons={19}
         name="Amazing Manderville Weapons"
         patchInfo="iLvl 630 (Patch 6.35)"

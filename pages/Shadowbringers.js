@@ -6,14 +6,7 @@ import useWeaponsCounter from "@/hooks/use-weapons-counter";
 import WeaponsSection from "@/components/WeaponsSection";
 
 function Shadowbringers() {
-  const {
-    weapons,
-    visibility,
-    selectWeapon,
-    checkAll,
-    uncheckAll,
-    handleVisibility
-  } = useWeaponsData();
+  const { weapons, selectWeapon, checkAll, uncheckAll } = useWeaponsData();
 
   const resistanceCounter = useWeaponsCounter(weapons.resistance);
   const augmentedResistanceCounter = useWeaponsCounter(
@@ -33,10 +26,6 @@ function Shadowbringers() {
       <WeaponsSection
         weaponsCounter={resistanceCounter}
         weapons={weapons.resistance}
-        handleVisibility={() =>
-          handleVisibility("resistance", visibility.resistance)
-        }
-        visibility={visibility.resistance}
         totalWeapons={17}
         name="Resistance Weapons"
         patchInfo="iLvl 485 (Patch 5.25)"
@@ -51,13 +40,6 @@ function Shadowbringers() {
       <WeaponsSection
         weaponsCounter={augmentedResistanceCounter}
         weapons={weapons.augmentedResistance}
-        handleVisibility={() =>
-          handleVisibility(
-            "augmentedResistance",
-            visibility.augmentedResistance
-          )
-        }
-        visibility={visibility.augmentedResistance}
         totalWeapons={17}
         name="Augmented Resistance Weapons"
         patchInfo="iLvl 500 (Patch 5.35)"
@@ -72,10 +54,6 @@ function Shadowbringers() {
       <WeaponsSection
         weaponsCounter={recollectionCounter}
         weapons={weapons.recollection}
-        handleVisibility={() =>
-          handleVisibility("recollection", visibility.recollection)
-        }
-        visibility={visibility.recollection}
         totalWeapons={17}
         name="Recollection Weapons"
         patchInfo="iLvl 500 (Patch 5.35)"
@@ -90,10 +68,6 @@ function Shadowbringers() {
       <WeaponsSection
         weaponsCounter={lawsOrderCounter}
         weapons={weapons.lawsOrder}
-        handleVisibility={() =>
-          handleVisibility("lawsOrder", visibility.lawsOrder)
-        }
-        visibility={visibility.lawsOrder}
         totalWeapons={17}
         name="Law's Order Weapons"
         patchInfo="iLvl 510 (Patch 5.45)"
@@ -108,10 +82,6 @@ function Shadowbringers() {
       <WeaponsSection
         weaponsCounter={augmentedLawsOrderCounter}
         weapons={weapons.augmentedLawsOrder}
-        handleVisibility={() =>
-          handleVisibility("augmentedLawsOrder", visibility.augmentedLawsOrder)
-        }
-        visibility={visibility.augmentedLawsOrder}
         totalWeapons={17}
         name="Augmented Law's Order Weapons"
         patchInfo="iLvl 515 (Patch 5.45)"
@@ -126,8 +96,6 @@ function Shadowbringers() {
       <WeaponsSection
         weaponsCounter={bladesCounter}
         weapons={weapons.augmentedLawsOrder}
-        handleVisibility={() => handleVisibility("blades", visibility.blades)}
-        visibility={visibility.blades}
         totalWeapons={17}
         name="Blade's Weapons"
         patchInfo="iLvl 535 (Patch 5.55)"
