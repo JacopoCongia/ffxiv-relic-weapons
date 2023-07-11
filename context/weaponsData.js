@@ -5,16 +5,6 @@ const WeaponsDataContext = createContext();
 
 function WeaponsDataProvider({ children }) {
   const [weapons, setWeapons] = useState(data);
-  const [visibility, setVisibility] = useState({
-    manderville: true,
-    amazingManderville: true,
-    resistance: true,
-    augmentedResistance: true,
-    recollection: true,
-    lawsOrder: true,
-    augmentedLawsOrder: true,
-    blades: true
-  });
 
   function selectWeapon(name, key, wpnCategory) {
     setWeapons((oldWeapons) => ({
@@ -44,38 +34,24 @@ function WeaponsDataProvider({ children }) {
     });
   }
 
-  function handleVisibility(key, value) {
-    setVisibility((prevVisibility) => ({
-      ...prevVisibility,
-      [key]: !value
-    }));
-  }
-
   useEffect(() => {
     let storedWeapons = JSON.parse(localStorage.getItem("weapons")) || data;
-    let storedVisibility =
-      JSON.parse(localStorage.getItem("visibility")) || visibility;
 
     setWeapons(storedWeapons);
-    setVisibility(storedVisibility);
   }, []);
 
   useEffect(() => {
     if (weapons !== data) {
       localStorage.setItem("weapons", JSON.stringify(weapons));
-      localStorage.setItem("visibility", JSON.stringify(visibility));
     }
-  }, [weapons, visibility]);
+  }, [weapons]);
 
   const valuesToShare = {
     weapons,
     setWeapons,
-    visibility,
-    setVisibility,
     selectWeapon,
     checkAll,
-    uncheckAll,
-    handleVisibility
+    uncheckAll
   };
 
   return (

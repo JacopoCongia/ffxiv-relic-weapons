@@ -6,14 +6,7 @@ import useWeaponsCounter from "@/hooks/use-weapons-counter";
 import WeaponsSection from "@/components/WeaponsSection";
 
 function Stormblood() {
-  const {
-    weapons,
-    visibility,
-    selectWeapon,
-    checkAll,
-    uncheckAll,
-    handleVisibility
-  } = useWeaponsData();
+  const { weapons, selectWeapon, checkAll, uncheckAll } = useWeaponsData();
 
   const antiquatedCounter = useWeaponsCounter(weapons.antiquated);
   const anemosCounter = useWeaponsCounter(weapons.anemos);
@@ -29,10 +22,6 @@ function Stormblood() {
       <WeaponsSection
         weaponsCounter={antiquatedCounter}
         weapons={weapons.antiquated}
-        handleVisibility={() =>
-          handleVisibility("antiquated", visibility.antiquated)
-        }
-        visibility={visibility.antiquated}
         totalWeapons={15}
         name="Antiquated Weapons"
         patchInfo="iLvl 290 (Patch 4.0)"
@@ -47,8 +36,6 @@ function Stormblood() {
       <WeaponsSection
         weaponsCounter={anemosCounter}
         weapons={weapons.anemos}
-        handleVisibility={() => handleVisibility("anemos", visibility.anemos)}
-        visibility={visibility.anemos}
         totalWeapons={15}
         name="Anemos Weapons"
         patchInfo="iLvl 355 (Patch 4.25)"
@@ -63,10 +50,6 @@ function Stormblood() {
       <WeaponsSection
         weaponsCounter={elementalCounter}
         weapons={weapons.elemental}
-        handleVisibility={() =>
-          handleVisibility("elemental", visibility.elemental)
-        }
-        visibility={visibility.elemental}
         totalWeapons={15}
         name="Elemental Weapons"
         patchInfo="iLvl 370 (Patch 4.36)"
@@ -81,8 +64,6 @@ function Stormblood() {
       <WeaponsSection
         weaponsCounter={pyrosCounter}
         weapons={weapons.pyros}
-        handleVisibility={() => handleVisibility("pyros", visibility.pyros)}
-        visibility={visibility.pyros}
         totalWeapons={15}
         name="Pyros Weapons"
         patchInfo="iLvl 385 (Patch 4.45)"
@@ -98,8 +79,6 @@ function Stormblood() {
       <WeaponsSection
         weaponsCounter={eurekaCounter}
         weapons={weapons.eureka}
-        handleVisibility={() => handleVisibility("eureka", visibility.eureka)}
-        visibility={visibility.eureka}
         totalWeapons={15}
         name="Eureka Weapons"
         patchInfo="iLvl 405 (Patch 4.55)"
@@ -114,8 +93,6 @@ function Stormblood() {
       <WeaponsSection
         weaponsCounter={physeosCounter}
         weapons={weapons.physeos}
-        handleVisibility={() => handleVisibility("physeos", visibility.physeos)}
-        visibility={visibility.physeos}
         totalWeapons={15}
         name="Physeos Weapons"
         patchInfo="iLvl 405 (Patch 4.55)"

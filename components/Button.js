@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 function Button({ children, className, check, uncheck, ...rest }) {
   const defaultClassNames = classNames(
-    "h-[35px] w-[180px] rounded-[6px] hover:opacity-80 text-[15px]",
+    "px-5 py-2 rounded-[4px] hover:opacity-80 text-[1rem]",
     { "bg-green-700": check, "bg-red-900": uncheck }
   );
 

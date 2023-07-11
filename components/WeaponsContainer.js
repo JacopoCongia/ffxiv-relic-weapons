@@ -13,7 +13,15 @@ function WeaponsContainer({ weapons, selectWeapon, type }) {
   ));
 
   return (
-    <div className="grid grid-cols-3 gap-5 sm:grid-cols-4 md:grid-cols-6">
+    <div
+      className="
+        grid 
+        grid-cols-3 
+        gap-5 
+        sm:grid-cols-4 
+        md:grid-cols-6
+      "
+    >
       {weaponElements}
     </div>
   );
