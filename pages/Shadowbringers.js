@@ -32,7 +32,7 @@ function Shadowbringers() {
         type="resistance"
         selectWeapon={selectWeapon}
         materials={data.materials}
-        tomestones={data.tomestones[1]}
+        tomestones={data.tomestones.poetics}
         tomestoneAmount={1000}
         checkAll={checkAll}
         uncheckAll={uncheckAll}
@@ -95,7 +95,7 @@ function Shadowbringers() {
       />
       <WeaponsSection
         weaponsCounter={bladesCounter}
-        weapons={weapons.augmentedLawsOrder}
+        weapons={weapons.blades}
         totalWeapons={17}
         name="Blade's Weapons"
         patchInfo="iLvl 535 (Patch 5.55)"

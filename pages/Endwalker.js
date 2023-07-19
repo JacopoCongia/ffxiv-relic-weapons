@@ -12,6 +12,9 @@ function Endwalker() {
   const amazingMandervilleCounter = useWeaponsCounter(
     weapons.amazingManderville
   );
+  const majesticMandervilleCounter = useWeaponsCounter(
+    weapons.majesticManderville
+  );
 
   return (
     <div>
@@ -26,7 +29,7 @@ function Endwalker() {
         type="manderville"
         selectWeapon={selectWeapon}
         materials={data.materials}
-        tomestones={data.tomestones[0]}
+        tomestones={data.tomestones.causality}
         tomestoneAmount={1500}
         checkAll={checkAll}
         uncheckAll={uncheckAll}
@@ -40,7 +43,21 @@ function Endwalker() {
         type="amazingManderville"
         selectWeapon={selectWeapon}
         materials={data.materials}
-        tomestones={data.tomestones[0]}
+        tomestones={data.tomestones.causality}
+        tomestoneAmount={1500}
+        checkAll={checkAll}
+        uncheckAll={uncheckAll}
+      />
+      <WeaponsSection
+        weaponsCounter={majesticMandervilleCounter}
+        weapons={weapons.majesticManderville}
+        totalWeapons={19}
+        name="Majestic Manderville Weapons"
+        patchInfo="iLvl 645 (Patch 6.45)"
+        type="majesticManderville"
+        selectWeapon={selectWeapon}
+        materials={data.materials}
+        tomestones={data.tomestones.causality}
         tomestoneAmount={1500}
         checkAll={checkAll}
         uncheckAll={uncheckAll}

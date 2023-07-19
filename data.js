@@ -1,21 +1,21 @@
 const data = {
-  tomestones: [
-    {
+  tomestones: {
+    causality: {
       id: 0,
       name: "Allagan Tomestones of Causality",
-      icon: "/icons/Allagan_Tomestone_of_Causality_Icon.png"
+      icon: "/icons/allagan_tomestone_of_causality.png"
     },
-    {
+    poetics: {
       id: 1,
       name: "Allagan Tomestones of Poetics",
-      icon: "/icons/Allagan_Tomestone_of_Poetics_Icon.png"
+      icon: "/icons/allagan_tomestone_of_poetics.png"
     }
-  ],
+  },
   materials: [
     {
       id: 0,
       name: "Manderium Meteorites",
-      icon: "/icons/endwalker-icons/materials/Manderium_Meteorite_Icon.png",
+      icon: "/icons/endwalker-icons/materials/manderium_meteorite.png",
       reqTotal: 57,
       reqPerWeapon: 3,
       type: "manderville"
@@ -23,77 +23,85 @@ const data = {
     {
       id: 1,
       name: "Complementary Chondrites",
-      icon: "/icons/endwalker-icons/materials/Complementary_Chondrite_Icon.png",
+      icon: "/icons/endwalker-icons/materials/complementary_chondrite.png",
       reqTotal: 57,
       reqPerWeapon: 3,
       type: "amazingManderville"
     },
     {
       id: 2,
+      name: "Amplifying Achondrite",
+      icon: "/icons/endwalker-icons/materials/amplifying_achondrite.png",
+      reqTotal: 57,
+      reqPerWeapon: 3,
+      type: "majesticManderville"
+    },
+    {
+      id: 3,
       name: "Thavnairian Scalepowder",
-      icon: "/icons/shadowbringers-icons/materials/Thavnairian_Scalepowder_Icon.png",
+      icon: "/icons/shadowbringers-icons/materials/thavnairian_scalepowder.png",
       reqTotal: 68,
       reqPerWeapon: 4,
       type: "resistance"
     },
     {
-      id: 3,
-      name: "Harrowing Memory of the Dying",
-      icon: "/icons/shadowbringers-icons/materials/Harrowing_Memory_of_the_Dying_Icon.png",
-      reqTotal: 340,
-      reqPerWeapon: 20,
-      type: "augmentedResistance"
-    },
-    {
       id: 4,
-      name: "Sorrowful Memory of the Dying",
-      icon: "/icons/shadowbringers-icons/materials/Sorrowful_Memory_of_the_Dying_Icon.png",
+      name: "Harrowing Memory of the Dying",
+      icon: "/icons/shadowbringers-icons/materials/harrowing_memory_of_the_dying.png",
       reqTotal: 340,
       reqPerWeapon: 20,
       type: "augmentedResistance"
     },
     {
       id: 5,
-      name: "Tortured Memory of the Dying",
-      icon: "/icons/shadowbringers-icons/materials/Tortured_Memory_of_the_Dying_Icon.png",
+      name: "Sorrowful Memory of the Dying",
+      icon: "/icons/shadowbringers-icons/materials/sorrowful_memory_of_the_dying.png",
       reqTotal: 340,
       reqPerWeapon: 20,
       type: "augmentedResistance"
     },
     {
       id: 6,
+      name: "Tortured Memory of the Dying",
+      icon: "/icons/shadowbringers-icons/materials/tortured_memory_of_the_dying.png",
+      reqTotal: 340,
+      reqPerWeapon: 20,
+      type: "augmentedResistance"
+    },
+    {
+      id: 7,
       name: "Bitter Memory of the Dying",
-      icon: "/icons/shadowbringers-icons/materials/Bitter_Memory_of_the_Dying_Icon.png",
+      icon: "/icons/shadowbringers-icons/materials/bitter_memory_of_the_dying.png",
       reqTotal: 102,
       reqPerWeapon: 6,
       type: "recollection"
     },
     {
-      id: 7,
+      id: 8,
       name: "Loathsome Memory of the Dying",
-      icon: "/icons/shadowbringers-icons/materials/Loathsome_Memory_of_the_Dying_Icon.png",
+      icon: "/icons/shadowbringers-icons/materials/loathsome_memory_of_the_dying.png",
       reqTotal: 255,
       reqPerWeapon: 15,
       type: "lawsOrder"
     },
     {
-      id: 8,
+      id: 9,
       name: "Timeworn Artifact",
-      icon: "/icons/shadowbringers-icons/materials/Timeworn_Artifact_Icon.png",
+      icon: "/icons/shadowbringers-icons/materials/timeworn_artifact.png",
       reqTotal: 255,
       reqPerWeapon: 15,
       type: "augmentedLawsOrder"
     },
     {
-      id: 9,
+      id: 10,
       name: "Raw Emotion",
-      icon: "/icons/shadowbringers-icons/materials/Raw_Emotion_Icon.png",
+      icon: "/icons/shadowbringers-icons/materials/raw_emotion.png",
       reqTotal: 255,
       reqPerWeapon: 15,
       type: "blades"
     },
     {
-      id: 10,
+      id: 11,
       name: "Gil",
       icon: "/icons/stormblood-icons/materials/gil.png",
       reqTotal: 15000,
@@ -101,7 +109,7 @@ const data = {
       type: "antiquated"
     },
     {
-      id: 11,
+      id: 12,
       name: "Protean Crystal",
       icon: "/icons/stormblood-icons/materials/protean_crystal.png",
       reqTotal: 19500,
@@ -109,7 +117,7 @@ const data = {
       type: "anemos"
     },
     {
-      id: 12,
+      id: 13,
       name: "Pazuzu's Feather",
       icon: "/icons/stormblood-icons/materials/pazuzus_feather.png",
       reqTotal: 45,
@@ -117,7 +125,7 @@ const data = {
       type: "anemos"
     },
     {
-      id: 13,
+      id: 14,
       name: "Pagos Crystal",
       icon: "/icons/stormblood-icons/materials/pagos_crystal.png",
       reqTotal: 7500,
@@ -125,7 +133,7 @@ const data = {
       type: "elemental"
     },
     {
-      id: 14,
+      id: 15,
       name: "Frosted Protean Crystal",
       icon: "/icons/stormblood-icons/materials/frosted_protean_crystal.png",
       reqTotal: 465,
@@ -133,7 +141,7 @@ const data = {
       type: "elemental"
     },
     {
-      id: 15,
+      id: 16,
       name: "Louhi's Ice",
       icon: "/icons/stormblood-icons/materials/louhis_ice.png",
       reqTotal: 75,
@@ -141,7 +149,7 @@ const data = {
       type: "elemental"
     },
     {
-      id: 16,
+      id: 17,
       name: "Pyros Crystal",
       icon: "/icons/stormblood-icons/materials/pyros_crystal.png",
       reqTotal: 9750,
@@ -149,7 +157,7 @@ const data = {
       type: "pyros"
     },
     {
-      id: 17,
+      id: 18,
       name: "Penthesilea's Flame",
       icon: "/icons/stormblood-icons/materials/penthesileas_flame.png",
       reqTotal: 75,
@@ -157,7 +165,7 @@ const data = {
       type: "pyros"
     },
     {
-      id: 18,
+      id: 19,
       name: "Hydatos Crystal",
       icon: "/icons/stormblood-icons/materials/hydatos_crystal.png",
       reqTotal: 5250,
@@ -165,7 +173,7 @@ const data = {
       type: "eureka"
     },
     {
-      id: 19,
+      id: 20,
       name: "Crystalline Scale",
       icon: "/icons/stormblood-icons/materials/crystalline_scale.png",
       reqTotal: 75,
@@ -173,7 +181,7 @@ const data = {
       type: "eureka"
     },
     {
-      id: 19,
+      id: 21,
       name: "Eureka Fragment",
       icon: "/icons/stormblood-icons/materials/eureka_fragment.png",
       reqTotal: 1500,
@@ -187,7 +195,7 @@ const data = {
       wpnName: "Manderville Sword",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Sword_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_sword.png",
       isSelected: false
     },
     {
@@ -195,7 +203,7 @@ const data = {
       wpnName: "Manderville Kite Shield",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Kite_Shield_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_kite_shield.png",
       isSelected: false
     },
     {
@@ -203,7 +211,7 @@ const data = {
       wpnName: "Manderville Axe",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Axe_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_axe.png",
       isSelected: false
     },
     {
@@ -211,7 +219,7 @@ const data = {
       wpnName: "Manderville Zweihander",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Zweihander_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_zweihander.png",
       isSelected: false
     },
     {
@@ -219,7 +227,7 @@ const data = {
       wpnName: "Manderville Gunblade",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Gunblade_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_gunblade.png",
       isSelected: false
     },
     {
@@ -227,7 +235,7 @@ const data = {
       wpnName: "Manderville Spear",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Spear_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_spear.png",
       isSelected: false
     },
     {
@@ -235,7 +243,7 @@ const data = {
       wpnName: "Manderville Scythe",
       wpnJob: "Reaper",
       wpnJobShort: "RPR",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Scythe_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_scythe.png",
       isSelected: false
     },
     {
@@ -243,7 +251,7 @@ const data = {
       wpnName: "Manderville Knuckles",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Knuckles_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_knuckles.png",
       isSelected: false
     },
     {
@@ -251,7 +259,7 @@ const data = {
       wpnName: "Manderville Samurai Blade",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Samurai_Blade_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_samurai_blade.png",
       isSelected: false
     },
     {
@@ -259,7 +267,7 @@ const data = {
       wpnName: "Manderville Knives",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Knives_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_knives.png",
       isSelected: false
     },
     {
@@ -267,7 +275,7 @@ const data = {
       wpnName: "Manderville Harp Bow",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Harp_Bow_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_harp_bow.png",
       isSelected: false
     },
     {
@@ -275,7 +283,7 @@ const data = {
       wpnName: "Manderville Revolver",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Revolver_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_revolver.png",
       isSelected: false
     },
     {
@@ -283,7 +291,7 @@ const data = {
       wpnName: "Manderville Chakrams",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Chakrams_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_chakrams.png",
       isSelected: false
     },
     {
@@ -291,7 +299,7 @@ const data = {
       wpnName: "Manderville Rod",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Rod_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_rod.png",
       isSelected: false
     },
     {
@@ -299,7 +307,7 @@ const data = {
       wpnName: "Manderville Index",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Index_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_index.png",
       isSelected: false
     },
     {
@@ -307,7 +315,7 @@ const data = {
       wpnName: "Manderville Rapier",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Rapier_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_rapier.png",
       isSelected: false
     },
     {
@@ -315,7 +323,7 @@ const data = {
       wpnName: "Manderville Cane",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Cane_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_cane.png",
       isSelected: false
     },
     {
@@ -323,7 +331,7 @@ const data = {
       wpnName: "Manderville Codex",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Codex_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_codex.png",
       isSelected: false
     },
     {
@@ -331,7 +339,7 @@ const data = {
       wpnName: "Manderville Torquetum",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Torquetum_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_torquetum.png",
       isSelected: false
     },
     {
@@ -339,7 +347,7 @@ const data = {
       wpnName: "Manderville Milpreves",
       wpnJob: "Sage",
       wpnJobShort: "SGE",
-      icon: "/icons/endwalker-icons/manderville/Manderville_Milpreves_Icon.png",
+      icon: "/icons/endwalker-icons/manderville/manderville_milpreves.png",
       isSelected: false
     }
   ],
@@ -349,7 +357,7 @@ const data = {
       wpnName: "Amazing Manderville Sword",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Sword_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_sword.png",
       isSelected: false
     },
     {
@@ -357,7 +365,7 @@ const data = {
       wpnName: "Amazing Manderville Kite Shield",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Kite_Shield_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_kite_shield.png",
       isSelected: false
     },
     {
@@ -365,7 +373,7 @@ const data = {
       wpnName: "Amazing Manderville Axe",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Axe_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_axe.png",
       isSelected: false
     },
     {
@@ -373,7 +381,7 @@ const data = {
       wpnName: "Amazing Manderville Zweihander",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Zweihander_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_zweihander.png",
       isSelected: false
     },
     {
@@ -381,7 +389,7 @@ const data = {
       wpnName: "Amazing Manderville Gunblade",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Gunblade_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_gunblade.png",
       isSelected: false
     },
     {
@@ -389,7 +397,7 @@ const data = {
       wpnName: "Amazing Manderville Spear",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Spear_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_spear.png",
       isSelected: false
     },
     {
@@ -397,7 +405,7 @@ const data = {
       wpnName: "Amazing Manderville Scythe",
       wpnJob: "Reaper",
       wpnJobShort: "RPR",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Scythe_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_scythe.png",
       isSelected: false
     },
     {
@@ -405,7 +413,7 @@ const data = {
       wpnName: "Amazing Manderville Knuckles",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Knuckles_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_knuckles.png",
       isSelected: false
     },
     {
@@ -413,7 +421,7 @@ const data = {
       wpnName: "Amazing Manderville Samurai Blade",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Samurai_Blade_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_samurai_blade.png",
       isSelected: false
     },
     {
@@ -421,7 +429,7 @@ const data = {
       wpnName: "Amazing Manderville Knives",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Knives_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_knives.png",
       isSelected: false
     },
     {
@@ -429,7 +437,7 @@ const data = {
       wpnName: "Amazing Manderville Harp Bow",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Harp_Bow_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_harp_bow.png",
       isSelected: false
     },
     {
@@ -437,7 +445,7 @@ const data = {
       wpnName: "Amazing Manderville Revolver",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Revolver_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_revolver.png",
       isSelected: false
     },
     {
@@ -445,7 +453,7 @@ const data = {
       wpnName: "Amazing Manderville Chakrams",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Chakrams_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_chakrams.png",
       isSelected: false
     },
     {
@@ -453,7 +461,7 @@ const data = {
       wpnName: "Amazing Manderville Rod",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Rod_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_rod.png",
       isSelected: false
     },
     {
@@ -461,7 +469,7 @@ const data = {
       wpnName: "Amazing Manderville Index",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Index_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_index.png",
       isSelected: false
     },
     {
@@ -469,7 +477,7 @@ const data = {
       wpnName: "Amazing Manderville Rapier",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Rapier_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_rapier.png",
       isSelected: false
     },
     {
@@ -477,7 +485,7 @@ const data = {
       wpnName: "Amazing Manderville Cane",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Cane_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_cane.png",
       isSelected: false
     },
     {
@@ -485,7 +493,7 @@ const data = {
       wpnName: "Amazing Manderville Codex",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Codex_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_codex.png",
       isSelected: false
     },
     {
@@ -493,7 +501,7 @@ const data = {
       wpnName: "Amazing Manderville Torquetum",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Torquetum_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_torquetum.png",
       isSelected: false
     },
     {
@@ -501,7 +509,169 @@ const data = {
       wpnName: "Amazing Manderville Milpreves",
       wpnJob: "Sage",
       wpnJobShort: "SGE",
-      icon: "/icons/endwalker-icons/amazing-manderville/Amazing_Manderville_Milpreves_Icon.png",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_milpreves.png",
+      isSelected: false
+    }
+  ],
+  majesticManderville: [
+    {
+      id: 0,
+      wpnName: "Amazing Manderville Sword",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_sword.png",
+      isSelected: false
+    },
+    {
+      id: 1,
+      wpnName: "Amazing Manderville Kite Shield",
+      wpnJob: "Paladin",
+      wpnJobShort: "PLD",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_kite_shield.png",
+      isSelected: false
+    },
+    {
+      id: 2,
+      wpnName: "Amazing Manderville Axe",
+      wpnJob: "Warrior",
+      wpnJobShort: "WAR",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_axe.png",
+      isSelected: false
+    },
+    {
+      id: 3,
+      wpnName: "Amazing Manderville Zweihander",
+      wpnJob: "Dark Knight",
+      wpnJobShort: "DRK",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_zweihander.png",
+      isSelected: false
+    },
+    {
+      id: 4,
+      wpnName: "Amazing Manderville Gunblade",
+      wpnJob: "Gunbreaker",
+      wpnJobShort: "GNB",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_gunblade.png",
+      isSelected: false
+    },
+    {
+      id: 5,
+      wpnName: "Amazing Manderville Spear",
+      wpnJob: "Dragoon",
+      wpnJobShort: "DRG",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_spear.png",
+      isSelected: false
+    },
+    {
+      id: 6,
+      wpnName: "Amazing Manderville Scythe",
+      wpnJob: "Reaper",
+      wpnJobShort: "RPR",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_scythe.png",
+      isSelected: false
+    },
+    {
+      id: 7,
+      wpnName: "Amazing Manderville Knuckles",
+      wpnJob: "Monk",
+      wpnJobShort: "MNK",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_knuckles.png",
+      isSelected: false
+    },
+    {
+      id: 8,
+      wpnName: "Amazing Manderville Samurai Blade",
+      wpnJob: "Samurai",
+      wpnJobShort: "SAM",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_samurai_blade.png",
+      isSelected: false
+    },
+    {
+      id: 9,
+      wpnName: "Amazing Manderville Knives",
+      wpnJob: "Ninja",
+      wpnJobShort: "NIN",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_knives.png",
+      isSelected: false
+    },
+    {
+      id: 10,
+      wpnName: "Amazing Manderville Harp Bow",
+      wpnJob: "Bard",
+      wpnJobShort: "BRD",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_harp_bow.png",
+      isSelected: false
+    },
+    {
+      id: 11,
+      wpnName: "Amazing Manderville Revolver",
+      wpnJob: "Machinist",
+      wpnJobShort: "MCH",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_revolver.png",
+      isSelected: false
+    },
+    {
+      id: 12,
+      wpnName: "Amazing Manderville Chakrams",
+      wpnJob: "Dancer",
+      wpnJobShort: "DNC",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_chakrams.png",
+      isSelected: false
+    },
+    {
+      id: 13,
+      wpnName: "Amazing Manderville Rod",
+      wpnJob: "Black Mage",
+      wpnJobShort: "BLM",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_rod.png",
+      isSelected: false
+    },
+    {
+      id: 14,
+      wpnName: "Amazing Manderville Index",
+      wpnJob: "Summoner",
+      wpnJobShort: "SMN",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_index.png",
+      isSelected: false
+    },
+    {
+      id: 15,
+      wpnName: "Amazing Manderville Rapier",
+      wpnJob: "Red Mage",
+      wpnJobShort: "RDM",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_rapier.png",
+      isSelected: false
+    },
+    {
+      id: 16,
+      wpnName: "Amazing Manderville Cane",
+      wpnJob: "White Mage",
+      wpnJobShort: "WHM",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_cane.png",
+      isSelected: false
+    },
+    {
+      id: 17,
+      wpnName: "Amazing Manderville Codex",
+      wpnJob: "Scholar",
+      wpnJobShort: "SCH",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_codex.png",
+      isSelected: false
+    },
+    {
+      id: 18,
+      wpnName: "Amazing Manderville Torquetum",
+      wpnJob: "Astrologian",
+      wpnJobShort: "AST",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_torquetum.png",
+      isSelected: false
+    },
+    {
+      id: 19,
+      wpnName: "Amazing Manderville Milpreves",
+      wpnJob: "Sage",
+      wpnJobShort: "SGE",
+      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_milpreves.png",
       isSelected: false
     }
   ],
@@ -511,7 +681,7 @@ const data = {
       wpnName: "Honorbound",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/resistance/Honorbound_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/honorbound.png",
       isSelected: false
     },
     {
@@ -519,7 +689,7 @@ const data = {
       wpnName: "Tenacity",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/resistance/Tenacity_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/tenacity.png",
       isSelected: false
     },
     {
@@ -527,7 +697,7 @@ const data = {
       wpnName: "Skullrender",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/shadowbringers-icons/resistance/Skullrender_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/skullrender.png",
       isSelected: false
     },
     {
@@ -535,7 +705,7 @@ const data = {
       wpnName: "Woeborn",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/shadowbringers-icons/resistance/Woeborn_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/woeborn.png",
       isSelected: false
     },
     {
@@ -543,7 +713,7 @@ const data = {
       wpnName: "Crownsblade",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/shadowbringers-icons/resistance/Crownsblade_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/crownsblade.png",
       isSelected: false
     },
     {
@@ -551,7 +721,7 @@ const data = {
       wpnName: "Dreizack",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/shadowbringers-icons/resistance/Dreizack_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/dreizack.png",
       isSelected: false
     },
     {
@@ -559,7 +729,7 @@ const data = {
       wpnName: "Samsara",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/shadowbringers-icons/resistance/Samsara_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/samsara.png",
       isSelected: false
     },
     {
@@ -567,7 +737,7 @@ const data = {
       wpnName: "Hoshikiri",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/shadowbringers-icons/resistance/Hoshikiri_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/hoshikiri.png",
       isSelected: false
     },
     {
@@ -575,7 +745,7 @@ const data = {
       wpnName: "Honeshirazu",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/shadowbringers-icons/resistance/Honeshirazu_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/honeshirazu.png",
       isSelected: false
     },
     {
@@ -583,7 +753,7 @@ const data = {
       wpnName: "Brilliance",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/shadowbringers-icons/resistance/Brilliance_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/brilliance.png",
       isSelected: false
     },
     {
@@ -591,7 +761,7 @@ const data = {
       wpnName: "Lawman",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/shadowbringers-icons/resistance/Lawman_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/lawman.png",
       isSelected: false
     },
     {
@@ -599,7 +769,7 @@ const data = {
       wpnName: "Enchufla",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/shadowbringers-icons/resistance/Enchufla_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/enchufla.png",
       isSelected: false
     },
     {
@@ -607,7 +777,7 @@ const data = {
       wpnName: "Soulscourge",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/shadowbringers-icons/resistance/Soulscourge_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/soulscourge.png",
       isSelected: false
     },
     {
@@ -615,7 +785,7 @@ const data = {
       wpnName: "Espiritus",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/shadowbringers-icons/resistance/Espiritus_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/espiritus.png",
       isSelected: false
     },
     {
@@ -623,7 +793,7 @@ const data = {
       wpnName: "Talekeeper",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/shadowbringers-icons/resistance/Talekeeper_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/talekeeper.png",
       isSelected: false
     },
     {
@@ -631,7 +801,7 @@ const data = {
       wpnName: "Ingrimm",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/shadowbringers-icons/resistance/Ingrimm_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/ingrimm.png",
       isSelected: false
     },
     {
@@ -639,7 +809,7 @@ const data = {
       wpnName: "Akademos",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/shadowbringers-icons/resistance/Akademos_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/akademos.png",
       isSelected: false
     },
     {
@@ -647,7 +817,7 @@ const data = {
       wpnName: "Solstice",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/shadowbringers-icons/resistance/Solstice_Icon.png",
+      icon: "/icons/shadowbringers-icons/resistance/solstice.png",
       isSelected: false
     }
   ],
@@ -657,7 +827,7 @@ const data = {
       wpnName: "Augmented Honorbound",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Honorbound_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_honorbound.png",
       isSelected: false
     },
     {
@@ -665,7 +835,7 @@ const data = {
       wpnName: "Augmented Tenacity",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Tenacity_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_tenacity.png",
       isSelected: false
     },
     {
@@ -673,7 +843,7 @@ const data = {
       wpnName: "Augmented Skullrender",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Skullrender_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_skullrender.png",
       isSelected: false
     },
     {
@@ -681,7 +851,7 @@ const data = {
       wpnName: "Augmented Woeborn",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Woeborn_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_woeborn.png",
       isSelected: false
     },
     {
@@ -689,7 +859,7 @@ const data = {
       wpnName: "Augmented Crownsblade",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Crownsblade_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_crownsblade.png",
       isSelected: false
     },
     {
@@ -697,7 +867,7 @@ const data = {
       wpnName: "Augmented Dreizack",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Dreizack_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_dreizack.png",
       isSelected: false
     },
     {
@@ -705,7 +875,7 @@ const data = {
       wpnName: "Augmented Samsara",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Samsara_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_samsara.png",
       isSelected: false
     },
     {
@@ -713,7 +883,7 @@ const data = {
       wpnName: "Augmented Hoshikiri",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Hoshikiri_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_hoshikiri.png",
       isSelected: false
     },
     {
@@ -721,7 +891,7 @@ const data = {
       wpnName: "Augmented Honeshirazu",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Honeshirazu_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_honeshirazu.png",
       isSelected: false
     },
     {
@@ -729,7 +899,7 @@ const data = {
       wpnName: "Augmented Brilliance",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Brilliance_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_brilliance.png",
       isSelected: false
     },
     {
@@ -737,7 +907,7 @@ const data = {
       wpnName: "Augmented Lawman",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Lawman_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_lawman.png",
       isSelected: false
     },
     {
@@ -745,7 +915,7 @@ const data = {
       wpnName: "Augmented Enchufla",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Enchufla_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_enchufla.png",
       isSelected: false
     },
     {
@@ -753,7 +923,7 @@ const data = {
       wpnName: "Augmented Soulscourge",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Soulscourge_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_soulscourge.png",
       isSelected: false
     },
     {
@@ -761,7 +931,7 @@ const data = {
       wpnName: "Augmented Espiritus",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Espiritus_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_espiritus.png",
       isSelected: false
     },
     {
@@ -769,7 +939,7 @@ const data = {
       wpnName: "Augmented Talekeeper",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Talekeeper_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_talekeeper.png",
       isSelected: false
     },
     {
@@ -777,7 +947,7 @@ const data = {
       wpnName: "Augmented Ingrimm",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Ingrimm_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_ingrimm.png",
       isSelected: false
     },
     {
@@ -785,7 +955,7 @@ const data = {
       wpnName: "Augmented Akademos",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Akademos_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_akademos.png",
       isSelected: false
     },
     {
@@ -793,7 +963,7 @@ const data = {
       wpnName: "Augmented Solstice",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Solstice_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_solstice.png",
       isSelected: false
     }
   ],
@@ -803,7 +973,7 @@ const data = {
       wpnName: "Honorbound Recollection",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Honorbound_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_honorbound.png",
       isSelected: false
     },
     {
@@ -811,7 +981,7 @@ const data = {
       wpnName: "Tenacity Recollection",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Tenacity_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_tenacity.png",
       isSelected: false
     },
     {
@@ -819,7 +989,7 @@ const data = {
       wpnName: "Skullrender Recollection",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Skullrender_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_skullrender.png",
       isSelected: false
     },
     {
@@ -827,7 +997,7 @@ const data = {
       wpnName: "Woeborn Recollection",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Woeborn_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_woeborn.png",
       isSelected: false
     },
     {
@@ -835,7 +1005,7 @@ const data = {
       wpnName: "Crownsblade Recollection",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Crownsblade_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_crownsblade.png",
       isSelected: false
     },
     {
@@ -843,7 +1013,7 @@ const data = {
       wpnName: "Dreizack Recollection",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Dreizack_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_dreizack.png",
       isSelected: false
     },
     {
@@ -851,7 +1021,7 @@ const data = {
       wpnName: "Samsara Recollection",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Samsara_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_samsara.png",
       isSelected: false
     },
     {
@@ -859,7 +1029,7 @@ const data = {
       wpnName: "Hoshikiri Recollection",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Hoshikiri_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_hoshikiri.png",
       isSelected: false
     },
     {
@@ -867,7 +1037,7 @@ const data = {
       wpnName: "Honeshirazu Recollection",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Honeshirazu_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_honeshirazu.png",
       isSelected: false
     },
     {
@@ -875,7 +1045,7 @@ const data = {
       wpnName: "Brilliance Recollection",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Brilliance_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_brilliance.png",
       isSelected: false
     },
     {
@@ -883,7 +1053,7 @@ const data = {
       wpnName: "Lawman Recollection",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Lawman_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_lawman.png",
       isSelected: false
     },
     {
@@ -891,7 +1061,7 @@ const data = {
       wpnName: "Enchufla Recollection",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Enchufla_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_enchufla.png",
       isSelected: false
     },
     {
@@ -899,7 +1069,7 @@ const data = {
       wpnName: "Soulscourge Recollection",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Soulscourge_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_soulscourge.png",
       isSelected: false
     },
     {
@@ -907,7 +1077,7 @@ const data = {
       wpnName: "Espiritus Recollection",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Espiritus_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_espiritus.png",
       isSelected: false
     },
     {
@@ -915,7 +1085,7 @@ const data = {
       wpnName: "Talekeeper Recollection",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Talekeeper_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_talekeeper.png",
       isSelected: false
     },
     {
@@ -923,7 +1093,7 @@ const data = {
       wpnName: "Ingrimm Recollection",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Ingrimm_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_ingrimm.png",
       isSelected: false
     },
     {
@@ -931,7 +1101,7 @@ const data = {
       wpnName: "Akademos Recollection",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Akademos_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_akademos.png",
       isSelected: false
     },
     {
@@ -939,7 +1109,7 @@ const data = {
       wpnName: "Solstice Recollection",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/shadowbringers-icons/augmented-resistance/Augmented_Solstice_Icon.png",
+      icon: "/icons/shadowbringers-icons/augmented-resistance/augmented_solstice.png",
       isSelected: false
     }
   ],
@@ -949,7 +1119,7 @@ const data = {
       wpnName: "Law's Order Bastard Sword",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Bastard_Sword_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_bastard_sword.png",
       isSelected: false
     },
     {
@@ -957,7 +1127,7 @@ const data = {
       wpnName: "Law's Order Kite Shield",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Kite_Shield_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_kite_shield.png",
       isSelected: false
     },
     {
@@ -965,7 +1135,7 @@ const data = {
       wpnName: "Law's Order Labrys",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Labrys_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_labrys.png",
       isSelected: false
     },
     {
@@ -973,7 +1143,7 @@ const data = {
       wpnName: "Law's Order Zweihander",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Zweihander_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_zweihander.png",
       isSelected: false
     },
     {
@@ -981,7 +1151,7 @@ const data = {
       wpnName: "Law's Order Manatrigger",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Manatrigger_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_manatrigger.png",
       isSelected: false
     },
     {
@@ -989,7 +1159,7 @@ const data = {
       wpnName: "Law's Order Spear",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Spear_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_spear.png",
       isSelected: false
     },
     {
@@ -997,7 +1167,7 @@ const data = {
       wpnName: "Law's Order Knuckles",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Knuckles_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_knuckles.png",
       isSelected: false
     },
     {
@@ -1005,7 +1175,7 @@ const data = {
       wpnName: "Law's Order Samurai Blade",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Samurai_Blade_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_samurai_blade.png",
       isSelected: false
     },
     {
@@ -1013,7 +1183,7 @@ const data = {
       wpnName: "Law's Order Knives",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Knives_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_knives.png",
       isSelected: false
     },
     {
@@ -1021,7 +1191,7 @@ const data = {
       wpnName: "Law's Order Composite Bow",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Composite_Bow_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_composite_bow.png",
       isSelected: false
     },
     {
@@ -1029,7 +1199,7 @@ const data = {
       wpnName: "Law's Order Revolver",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Revolver_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_revolver.png",
       isSelected: false
     },
     {
@@ -1037,7 +1207,7 @@ const data = {
       wpnName: "Law's Order Chakrams",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Chakrams_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_chakrams.png",
       isSelected: false
     },
     {
@@ -1045,7 +1215,7 @@ const data = {
       wpnName: "Law's Order Rod",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Rod_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_rod.png",
       isSelected: false
     },
     {
@@ -1053,7 +1223,7 @@ const data = {
       wpnName: "Law's Order Index",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Index_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_index.png",
       isSelected: false
     },
     {
@@ -1061,7 +1231,7 @@ const data = {
       wpnName: "Law's Order Rapier",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Rapier_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_rapier.png",
       isSelected: false
     },
     {
@@ -1069,7 +1239,7 @@ const data = {
       wpnName: "Law's Order Cane",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Cane_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_cane.png",
       isSelected: false
     },
     {
@@ -1077,7 +1247,7 @@ const data = {
       wpnName: "Law's Order Codex",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Codex_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_codex.png",
       isSelected: false
     },
     {
@@ -1085,7 +1255,7 @@ const data = {
       wpnName: "Law's Order Astrometer",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Astrometer_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_astrometer.png",
       isSelected: false
     }
   ],
@@ -1095,7 +1265,7 @@ const data = {
       wpnName: "Augmented Law's Order Bastard Sword",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Bastard_Sword_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_bastard_sword.png",
       isSelected: false
     },
     {
@@ -1103,7 +1273,7 @@ const data = {
       wpnName: "Augmented Law's Order Kite Shield",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Kite_Shield_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_kite_shield.png",
       isSelected: false
     },
     {
@@ -1111,7 +1281,7 @@ const data = {
       wpnName: "Augmented Law's Order Labrys",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Labrys_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_labrys.png",
       isSelected: false
     },
     {
@@ -1119,7 +1289,7 @@ const data = {
       wpnName: "Augmented Law's Order Zweihander",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Zweihander_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_zweihander.png",
       isSelected: false
     },
     {
@@ -1127,7 +1297,7 @@ const data = {
       wpnName: "Augmented Law's Order Manatrigger",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Manatrigger_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_manatrigger.png",
       isSelected: false
     },
     {
@@ -1135,7 +1305,7 @@ const data = {
       wpnName: "Augmented Law's Order Spear",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Spear_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_spear.png",
       isSelected: false
     },
     {
@@ -1143,7 +1313,7 @@ const data = {
       wpnName: "Augmented Law's Order Knuckles",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Knuckles_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_knuckles.png",
       isSelected: false
     },
     {
@@ -1151,7 +1321,7 @@ const data = {
       wpnName: "Augmented Law's Order Samurai Blade",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Samurai_Blade_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_samurai_blade.png",
       isSelected: false
     },
     {
@@ -1159,7 +1329,7 @@ const data = {
       wpnName: "Augmented Law's Order Knives",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Knives_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_knives.png",
       isSelected: false
     },
     {
@@ -1167,7 +1337,7 @@ const data = {
       wpnName: "Augmented Law's Order Composite Bow",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Composite_Bow_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_composite_bow.png",
       isSelected: false
     },
     {
@@ -1175,7 +1345,7 @@ const data = {
       wpnName: "Augmented Law's Order Revolver",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Revolver_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_revolver.png",
       isSelected: false
     },
     {
@@ -1183,7 +1353,7 @@ const data = {
       wpnName: "Augmented Law's Order Chakrams",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Chakrams_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_chakrams.png",
       isSelected: false
     },
     {
@@ -1191,7 +1361,7 @@ const data = {
       wpnName: "Augmented Law's Order Rod",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Rod_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_rod.png",
       isSelected: false
     },
     {
@@ -1199,7 +1369,7 @@ const data = {
       wpnName: "Augmented Law's Order Index",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Index_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_index.png",
       isSelected: false
     },
     {
@@ -1207,7 +1377,7 @@ const data = {
       wpnName: "Augmented Law's Order Rapier",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Rapier_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_rapier.png",
       isSelected: false
     },
     {
@@ -1215,7 +1385,7 @@ const data = {
       wpnName: "Augmented Law's Order Cane",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Cane_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_cane.png",
       isSelected: false
     },
     {
@@ -1223,7 +1393,7 @@ const data = {
       wpnName: "Augmented Law's Order Codex",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Codex_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_codex.png",
       isSelected: false
     },
     {
@@ -1231,7 +1401,7 @@ const data = {
       wpnName: "Augmented Law's Order Astrometer",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/shadowbringers-icons/laws-order/Law's_Order_Astrometer_Icon.png",
+      icon: "/icons/shadowbringers-icons/laws-order/law's_order_astrometer.png",
       isSelected: false
     }
   ],
@@ -1241,7 +1411,7 @@ const data = {
       wpnName: "Blade's Honor",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Honor_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_honor.png",
       isSelected: false
     },
     {
@@ -1249,7 +1419,7 @@ const data = {
       wpnName: "Blade's Fortitude",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Fortitude_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_fortitude.png",
       isSelected: false
     },
     {
@@ -1257,7 +1427,7 @@ const data = {
       wpnName: "Blade's Valor",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Valor_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_valor.png",
       isSelected: false
     },
     {
@@ -1265,7 +1435,7 @@ const data = {
       wpnName: "Blade's Justice",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Justice_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_justice.png",
       isSelected: false
     },
     {
@@ -1273,7 +1443,7 @@ const data = {
       wpnName: "Blade's Resolve",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Resolve_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_resolve.png",
       isSelected: false
     },
     {
@@ -1281,7 +1451,7 @@ const data = {
       wpnName: "Blade's Glory",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Glory_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_glory.png",
       isSelected: false
     },
     {
@@ -1289,7 +1459,7 @@ const data = {
       wpnName: "Blade's Serenity",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Serenity_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_serenity.png",
       isSelected: false
     },
     {
@@ -1297,7 +1467,7 @@ const data = {
       wpnName: "Blade's Fealty",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Fealty_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_fealty.png",
       isSelected: false
     },
     {
@@ -1305,7 +1475,7 @@ const data = {
       wpnName: "Blade's Subtlety",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Subtlety_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_subtlety.png",
       isSelected: false
     },
     {
@@ -1313,7 +1483,7 @@ const data = {
       wpnName: "Blade's Muse",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Muse_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_muse.png",
       isSelected: false
     },
     {
@@ -1321,7 +1491,7 @@ const data = {
       wpnName: "Blade's Ingenuity",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Ingenuity_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_ingenuity.png",
       isSelected: false
     },
     {
@@ -1329,7 +1499,7 @@ const data = {
       wpnName: "Blade's Euphoria",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Euphoria_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_euphoria.png",
       isSelected: false
     },
     {
@@ -1337,7 +1507,7 @@ const data = {
       wpnName: "Blade's Fury",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Fury_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_fury.png",
       isSelected: false
     },
     {
@@ -1345,7 +1515,7 @@ const data = {
       wpnName: "Blade's Acumen",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Acumen_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_acumen.png",
       isSelected: false
     },
     {
@@ -1353,7 +1523,7 @@ const data = {
       wpnName: "Blade's Temperance",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Temperance_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_temperance.png",
       isSelected: false
     },
     {
@@ -1361,7 +1531,7 @@ const data = {
       wpnName: "Blade's Mercy",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Mercy_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_mercy.png",
       isSelected: false
     },
     {
@@ -1369,7 +1539,7 @@ const data = {
       wpnName: "Blade's Wisdom",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Wisdom_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_wisdom.png",
       isSelected: false
     },
     {
@@ -1377,7 +1547,7 @@ const data = {
       wpnName: "Blade's Providence",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/shadowbringers-icons/blades/Blade's_Providence_Icon.png",
+      icon: "/icons/shadowbringers-icons/blades/blade's_providence.png",
       isSelected: false
     }
   ],
