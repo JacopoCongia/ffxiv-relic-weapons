@@ -516,39 +516,39 @@ const data = {
   majesticManderville: [
     {
       id: 0,
-      wpnName: "Amazing Manderville Sword",
+      wpnName: "Majestic Manderville Sword",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_sword.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_sword.png",
       isSelected: false
     },
     {
       id: 1,
-      wpnName: "Amazing Manderville Kite Shield",
+      wpnName: "Majestic Manderville Kite Shield",
       wpnJob: "Paladin",
       wpnJobShort: "PLD",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_kite_shield.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_shield.png",
       isSelected: false
     },
     {
       id: 2,
-      wpnName: "Amazing Manderville Axe",
+      wpnName: "Majestic Manderville Bardiche",
       wpnJob: "Warrior",
       wpnJobShort: "WAR",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_axe.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_bardiche.png",
       isSelected: false
     },
     {
       id: 3,
-      wpnName: "Amazing Manderville Zweihander",
+      wpnName: "Majestic Manderville Greatsword",
       wpnJob: "Dark Knight",
       wpnJobShort: "DRK",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_zweihander.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_greatsword.png",
       isSelected: false
     },
     {
       id: 4,
-      wpnName: "Amazing Manderville Gunblade",
+      wpnName: "Majestic Manderville Gunblade",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
       icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_gunblade.png",
@@ -556,7 +556,7 @@ const data = {
     },
     {
       id: 5,
-      wpnName: "Amazing Manderville Spear",
+      wpnName: "Majestic Manderville Spear",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
       icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_spear.png",
@@ -564,31 +564,31 @@ const data = {
     },
     {
       id: 6,
-      wpnName: "Amazing Manderville Scythe",
+      wpnName: "Majestic Manderville War Scythe",
       wpnJob: "Reaper",
       wpnJobShort: "RPR",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_scythe.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_war_scythe.png",
       isSelected: false
     },
     {
       id: 7,
-      wpnName: "Amazing Manderville Knuckles",
+      wpnName: "Majestic Manderville Fists",
       wpnJob: "Monk",
       wpnJobShort: "MNK",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_knuckles.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_fists.png",
       isSelected: false
     },
     {
       id: 8,
-      wpnName: "Amazing Manderville Samurai Blade",
+      wpnName: "Majestic Manderville Samurai Blade",
       wpnJob: "Samurai",
       wpnJobShort: "SAM",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_samurai_blade.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_samurai_blade.png",
       isSelected: false
     },
     {
       id: 9,
-      wpnName: "Amazing Manderville Knives",
+      wpnName: "Majestic Manderville Knives",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
       icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_knives.png",
@@ -596,23 +596,23 @@ const data = {
     },
     {
       id: 10,
-      wpnName: "Amazing Manderville Harp Bow",
+      wpnName: "Majestic Manderville Harp Bow",
       wpnJob: "Bard",
       wpnJobShort: "BRD",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_harp_bow.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_harp_bow.png",
       isSelected: false
     },
     {
       id: 11,
-      wpnName: "Amazing Manderville Revolver",
+      wpnName: "Majestic Manderville Pistol",
       wpnJob: "Machinist",
       wpnJobShort: "MCH",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_revolver.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_pistol.png",
       isSelected: false
     },
     {
       id: 12,
-      wpnName: "Amazing Manderville Chakrams",
+      wpnName: "Majestic Manderville Chakrams",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
       icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_chakrams.png",
@@ -620,7 +620,7 @@ const data = {
     },
     {
       id: 13,
-      wpnName: "Amazing Manderville Rod",
+      wpnName: "Majestic Manderville Rod",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
       icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_rod.png",
@@ -628,50 +628,50 @@ const data = {
     },
     {
       id: 14,
-      wpnName: "Amazing Manderville Index",
+      wpnName: "Majestic Manderville Index",
       wpnJob: "Summoner",
       wpnJobShort: "SMN",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_index.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_index.png",
       isSelected: false
     },
     {
       id: 15,
-      wpnName: "Amazing Manderville Rapier",
+      wpnName: "Majestic Manderville Degen",
       wpnJob: "Red Mage",
       wpnJobShort: "RDM",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_rapier.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_degen.png",
       isSelected: false
     },
     {
       id: 16,
-      wpnName: "Amazing Manderville Cane",
+      wpnName: "Majestic Manderville Wand",
       wpnJob: "White Mage",
       wpnJobShort: "WHM",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_cane.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_wand.png",
       isSelected: false
     },
     {
       id: 17,
-      wpnName: "Amazing Manderville Codex",
+      wpnName: "Majestic Manderville Codex",
       wpnJob: "Scholar",
       wpnJobShort: "SCH",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_codex.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_codex.png",
       isSelected: false
     },
     {
       id: 18,
-      wpnName: "Amazing Manderville Torquetum",
+      wpnName: "Majestic Manderville Orrery",
       wpnJob: "Astrologian",
       wpnJobShort: "AST",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_torquetum.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_orrery.png",
       isSelected: false
     },
     {
       id: 19,
-      wpnName: "Amazing Manderville Milpreves",
+      wpnName: "Majestic Manderville Wings",
       wpnJob: "Sage",
       wpnJobShort: "SGE",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_milpreves.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_wings.png",
       isSelected: false
     }
   ],
