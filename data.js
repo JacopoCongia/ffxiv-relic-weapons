@@ -548,10 +548,10 @@ const data = {
     },
     {
       id: 4,
-      wpnName: "Majestic Manderville Gunblade",
+      wpnName: "Majestic Manderville Bayonet",
       wpnJob: "Gunbreaker",
       wpnJobShort: "GNB",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_gunblade.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_bayonet.png",
       isSelected: false
     },
     {
@@ -559,7 +559,7 @@ const data = {
       wpnName: "Majestic Manderville Spear",
       wpnJob: "Dragoon",
       wpnJobShort: "DRG",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_spear.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_spear.png",
       isSelected: false
     },
     {
@@ -591,7 +591,7 @@ const data = {
       wpnName: "Majestic Manderville Knives",
       wpnJob: "Ninja",
       wpnJobShort: "NIN",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_knives.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_knives.png",
       isSelected: false
     },
     {
@@ -620,10 +620,10 @@ const data = {
     },
     {
       id: 13,
-      wpnName: "Majestic Manderville Rod",
+      wpnName: "Majestic Manderville Staff",
       wpnJob: "Black Mage",
       wpnJobShort: "BLM",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_rod.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_staff.png",
       isSelected: false
     },
     {
