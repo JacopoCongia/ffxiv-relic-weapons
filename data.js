@@ -615,7 +615,7 @@ const data = {
       wpnName: "Majestic Manderville Chakrams",
       wpnJob: "Dancer",
       wpnJobShort: "DNC",
-      icon: "/icons/endwalker-icons/amazing-manderville/amazing_manderville_chakrams.png",
+      icon: "/icons/endwalker-icons/majestic-manderville/majestic_manderville_chakrams.png",
       isSelected: false
     },
     {
